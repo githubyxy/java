@@ -57,4 +57,6 @@ var file = mask.revealFile(canvas);       //file.name = 文件名称， file.
   
 >>* 包含一张美女图片的风景图片
   ![](https://ipfs.io/ipfs/QmNUiD81fU7ypgqkrrUrJVasmACmEQ3wbfEQte9Js78ou1)
+
+  * Reveal file2 按钮的点击事件，可以把一个图片里的隐藏图片显示出来
   
