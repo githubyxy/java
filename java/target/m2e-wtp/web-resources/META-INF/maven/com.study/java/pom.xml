@@ -46,6 +46,11 @@
             <artifactId>spring-webmvc</artifactId>
             <version>${spring.version}</version>
         </dependency>
+        <dependency>
+		    <groupId>org.springframework.amqp</groupId>
+		    <artifactId>spring-rabbit</artifactId>
+		    <version>1.5.0.RELEASE</version>
+		</dependency>
         <!-- End: spring依赖 -->
         <!-- Begin: 数据库依赖包 -->
         <dependency>  
@@ -198,6 +203,12 @@
 		    <groupId>com.sun.pdfview</groupId>
 		    <artifactId>pdfrenderer</artifactId>
 		    <version>0.9.1-patched</version>
+		</dependency>
+        <!-- rabbitQM -->
+        <dependency>
+		    <groupId>com.rabbitmq</groupId>
+		    <artifactId>amqp-client</artifactId>
+		    <version>3.5.6</version>
 		</dependency>
         
 	</dependencies>
