@@ -324,4 +324,36 @@ Caused by: java.net.ConnectException: Connection refused
   [INFO] [2018-04-20 17:33:11][org.springframework.context.support.DefaultLifecycleProcessor]Stopping beans in phase 2147483647
   [INFO] [2018-04-20 17:33:11][org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer]Waiting for workers to finish.
   [INFO] [2018-04-20 17:33:11][org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer]Successfully waited for workers to finish.
+  [INFO] [2018-04-23 13:38:58][org.springframework.context.support.ClassPathXmlApplicationContext]Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@7dab0576: startup date [Mon Apr 23 13:38:58 CST 2018]; root of context hierarchy
+  [INFO] [2018-04-23 13:38:58][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [spring/context.xml]
+  [INFO] [2018-04-23 13:38:59][org.springframework.context.support.DefaultLifecycleProcessor]Starting beans in phase 2147483647
+  [INFO] [2018-04-23 13:38:59][org.springframework.amqp.rabbit.connection.CachingConnectionFactory]Created new connection: SimpleConnection@3ffaef0a [delegate=amqp://admin@192.168.1.7:5672/]
+  [INFO] [2018-04-23 13:39:00][org.springframework.context.support.ClassPathXmlApplicationContext]Closing org.springframework.context.support.ClassPathXmlApplicationContext@7dab0576: startup date [Mon Apr 23 13:38:58 CST 2018]; root of context hierarchy
+  [INFO] [2018-04-23 13:39:00][org.springframework.context.support.DefaultLifecycleProcessor]Stopping beans in phase 2147483647
+  [INFO] [2018-04-23 13:39:00][org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer]Waiting for workers to finish.
+  [INFO] [2018-04-23 13:39:01][org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer]Successfully waited for workers to finish.
+  [INFO] [2018-04-23 13:39:27][org.springframework.context.support.ClassPathXmlApplicationContext]Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@2623592: startup date [Mon Apr 23 13:39:27 CST 2018]; root of context hierarchy
+  [INFO] [2018-04-23 13:39:27][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [spring/context.xml]
+  [INFO] [2018-04-23 13:39:27][org.springframework.context.support.DefaultLifecycleProcessor]Starting beans in phase 2147483647
+  [INFO] [2018-04-23 13:39:27][org.springframework.amqp.rabbit.connection.CachingConnectionFactory]Created new connection: SimpleConnection@25c9e2df [delegate=amqp://admin@192.168.1.7:5672/]
+  [INFO] [2018-04-23 13:39:28][org.springframework.context.support.ClassPathXmlApplicationContext]Closing org.springframework.context.support.ClassPathXmlApplicationContext@2623592: startup date [Mon Apr 23 13:39:27 CST 2018]; root of context hierarchy
+  [INFO] [2018-04-23 13:39:28][org.springframework.context.support.DefaultLifecycleProcessor]Stopping beans in phase 2147483647
+  [INFO] [2018-04-23 13:39:28][org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer]Waiting for workers to finish.
+  [INFO] [2018-04-23 13:39:29][org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer]Successfully waited for workers to finish.
+  [INFO] [2018-04-23 13:39:45][org.springframework.context.support.ClassPathXmlApplicationContext]Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@2623592: startup date [Mon Apr 23 13:39:45 CST 2018]; root of context hierarchy
+  [INFO] [2018-04-23 13:39:45][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [spring/context.xml]
+  [INFO] [2018-04-23 13:39:45][org.springframework.context.support.DefaultLifecycleProcessor]Starting beans in phase 2147483647
+  [INFO] [2018-04-23 13:39:45][org.springframework.amqp.rabbit.connection.CachingConnectionFactory]Created new connection: SimpleConnection@73639a56 [delegate=amqp://admin@192.168.1.7:5672/]
+  [INFO] [2018-04-23 13:39:47][org.springframework.context.support.ClassPathXmlApplicationContext]Closing org.springframework.context.support.ClassPathXmlApplicationContext@2623592: startup date [Mon Apr 23 13:39:45 CST 2018]; root of context hierarchy
+  [INFO] [2018-04-23 13:39:47][org.springframework.context.support.DefaultLifecycleProcessor]Stopping beans in phase 2147483647
+  [INFO] [2018-04-23 13:39:47][org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer]Waiting for workers to finish.
+  [INFO] [2018-04-23 13:39:47][org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer]Successfully waited for workers to finish.
+  [INFO] [2018-04-23 13:42:19][org.springframework.context.support.ClassPathXmlApplicationContext]Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@2623592: startup date [Mon Apr 23 13:42:19 CST 2018]; root of context hierarchy
+  [INFO] [2018-04-23 13:42:19][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [spring/context.xml]
+  [INFO] [2018-04-23 13:42:20][org.springframework.context.support.DefaultLifecycleProcessor]Starting beans in phase 2147483647
+  [INFO] [2018-04-23 13:42:20][org.springframework.amqp.rabbit.connection.CachingConnectionFactory]Created new connection: SimpleConnection@3ffaef0a [delegate=amqp://admin@192.168.1.7:5672/]
+  [INFO] [2018-04-23 13:42:21][org.springframework.context.support.ClassPathXmlApplicationContext]Closing org.springframework.context.support.ClassPathXmlApplicationContext@2623592: startup date [Mon Apr 23 13:42:19 CST 2018]; root of context hierarchy
+  [INFO] [2018-04-23 13:42:21][org.springframework.context.support.DefaultLifecycleProcessor]Stopping beans in phase 2147483647
+  [INFO] [2018-04-23 13:42:21][org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer]Waiting for workers to finish.
+  [INFO] [2018-04-23 13:42:22][org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer]Successfully waited for workers to finish.
   
