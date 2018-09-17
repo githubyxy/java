@@ -46,40 +46,40 @@ public class Heapsort {
 	     * @param array
 	     * @param i
 	     */
-//	    public static void adjustHeap(int[] array, int i) {
-//	        int maxIndex = i;
-//	        //如果有左子树，且左子树大于父节点，则将最大指针指向左子树
-//	        if (i * 2 +1 < len && array[i * 2 +1] > array[maxIndex])
-//	            maxIndex = i * 2 +1;
-//	        //如果有右子树，且右子树大于父节点，则将最大指针指向右子树
-//	        if (i * 2 + 2 < len && array[i * 2 + 2] > array[maxIndex])
-//	            maxIndex = i * 2 + 2;
-//	        //如果父节点不是最大值，则将父节点与最大值交换，并且递归调整与父节点交换的位置。
-//	        if (maxIndex != i) {
-//	            swap(array, maxIndex, i);
-//	            adjustHeap(array, maxIndex);
-//	        }
-//	    }
+	    public static void adjustHeap(int[] array, int i) {
+	        int maxIndex = i;
+	        //如果有左子树，且左子树大于父节点，则将最大指针指向左子树
+	        if (i * 2 +1 < len && array[i * 2 +1] > array[maxIndex])
+	            maxIndex = i * 2 +1;
+	        //如果有右子树，且右子树大于父节点，则将最大指针指向右子树
+	        if (i * 2 + 2 < len && array[i * 2 + 2] > array[maxIndex])
+	            maxIndex = i * 2 + 2;
+	        //如果父节点不是最大值，则将父节点与最大值交换，并且递归调整与父节点交换的位置。
+	        if (maxIndex != i) {
+	            swap(array, maxIndex, i);
+	            adjustHeap(array, maxIndex);
+	        }
+	    }
 	    
 	    /**
 	     * 调整使之成为小顶堆
 	     * @param array
 	     * @param i
 	     */
-	    public static void adjustHeap(int[] array, int i) {
-	    	int maxIndex = i;
-	    	//如果有左子树，且左子树小于父节点，则将最小指针指向左子树
-	    	if (i * 2 +1 < len && array[i * 2 +1] < array[maxIndex])
-	    		maxIndex = i * 2 +1;
-	    	//如果有右子树，且右子树小于父节点，则将最小指针指向右子树
-	    	if (i * 2 + 2 < len && array[i * 2 + 2] < array[maxIndex])
-	    		maxIndex = i * 2 + 2;
-	    	//如果父节点不是最小值，则将父节点与最小值交换，并且递归调整与父节点交换的位置。
-	    	if (maxIndex != i) {
-	    		swap(array, maxIndex, i);
-	    		adjustHeap(array, maxIndex);
-	    	}
-	    }
+//	    public static void adjustHeap(int[] array, int i) {
+//	    	int maxIndex = i;
+//	    	//如果有左子树，且左子树小于父节点，则将最小指针指向左子树
+//	    	if (i * 2 +1 < len && array[i * 2 +1] < array[maxIndex])
+//	    		maxIndex = i * 2 +1;
+//	    	//如果有右子树，且右子树小于父节点，则将最小指针指向右子树
+//	    	if (i * 2 + 2 < len && array[i * 2 + 2] < array[maxIndex])
+//	    		maxIndex = i * 2 + 2;
+//	    	//如果父节点不是最小值，则将父节点与最小值交换，并且递归调整与父节点交换的位置。
+//	    	if (maxIndex != i) {
+//	    		swap(array, maxIndex, i);
+//	    		adjustHeap(array, maxIndex);
+//	    	}
+//	    }
 	    
 	    /**
 	     * 交换数组内两个元素
@@ -94,7 +94,7 @@ public class Heapsort {
 	    }
 	    
 	    public static void main(String[] args) {
-			int[] array = new int[]{4,6,8,5,9};
+			int[] array = new int[]{5,4,3,8,7};
 			array = HeapSort(array);
 			for (int i = 0; i < array.length; i++) {
 				System.out.println(array[i]);

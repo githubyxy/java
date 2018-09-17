@@ -22,6 +22,12 @@ public class MyDomain9 {
 
 	synchronized public void serviceMethodB() {
 		System.out.println("B begin time = " + System.currentTimeMillis());
+		try {
+			Thread.sleep(2000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		System.out.println("B end time = " + System.currentTimeMillis());
 	}
 }

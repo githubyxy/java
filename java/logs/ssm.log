@@ -356,4 +356,25 @@ Caused by: java.net.ConnectException: Connection refused
   [INFO] [2018-04-23 13:42:21][org.springframework.context.support.DefaultLifecycleProcessor]Stopping beans in phase 2147483647
   [INFO] [2018-04-23 13:42:21][org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer]Waiting for workers to finish.
   [INFO] [2018-04-23 13:42:22][org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer]Successfully waited for workers to finish.
+  [INFO] [2018-06-21 18:29:05][org.springframework.amqp.rabbit.connection.CachingConnectionFactory]Created new connection: SimpleConnection@501614a [delegate=amqp://admin@192.168.1.7:5672/]
+  [INFO] [2018-06-21 18:29:05][org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer]Waiting for workers to finish.
+  [INFO] [2018-06-21 18:29:05][org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer]Successfully waited for workers to finish.
+  [INFO] [2018-06-21 18:30:27][org.springframework.amqp.rabbit.connection.CachingConnectionFactory]Created new connection: SimpleConnection@726722a6 [delegate=amqp://admin@192.168.1.7:5672/]
+  [INFO] [2018-06-21 18:30:27][org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer]Waiting for workers to finish.
+  [INFO] [2018-06-21 18:30:27][org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer]Successfully waited for workers to finish.
+  [INFO] [2018-06-21 18:32:53][org.springframework.amqp.rabbit.connection.CachingConnectionFactory]Created new connection: SimpleConnection@2686a13f [delegate=amqp://admin@192.168.1.7:5672/]
+  [INFO] [2018-06-21 18:32:54][org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer]Waiting for workers to finish.
+  [INFO] [2018-06-21 18:32:54][org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer]Successfully waited for workers to finish.
+  [INFO] [2018-06-21 18:33:38][org.springframework.amqp.rabbit.connection.CachingConnectionFactory]Created new connection: SimpleConnection@501614a [delegate=amqp://admin@192.168.1.7:5672/]
+  [INFO] [2018-06-21 18:33:38][org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer]Waiting for workers to finish.
+  [INFO] [2018-06-21 18:33:38][org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer]Successfully waited for workers to finish.
+  [INFO] [2018-06-21 18:34:44][org.springframework.amqp.rabbit.connection.CachingConnectionFactory]Created new connection: SimpleConnection@5113faf7 [delegate=amqp://admin@192.168.1.7:5672/]
+  [INFO] [2018-06-21 18:34:44][org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer]Waiting for workers to finish.
+  [INFO] [2018-06-21 18:34:44][org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer]Successfully waited for workers to finish.
+  [INFO] [2018-06-21 19:07:57][org.springframework.amqp.rabbit.connection.CachingConnectionFactory]Created new connection: SimpleConnection@1d9a43d7 [delegate=amqp://admin@192.168.1.7:5672/]
+  [INFO] [2018-06-21 19:07:57][org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer]Waiting for workers to finish.
+  [INFO] [2018-06-21 19:07:57][org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer]Successfully waited for workers to finish.
+  [INFO] [2018-06-21 19:08:33][org.springframework.amqp.rabbit.connection.CachingConnectionFactory]Created new connection: SimpleConnection@501614a [delegate=amqp://admin@192.168.1.7:5672/]
+  [INFO] [2018-06-21 19:08:34][org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer]Waiting for workers to finish.
+  [INFO] [2018-06-21 19:08:34][org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer]Successfully waited for workers to finish.
   

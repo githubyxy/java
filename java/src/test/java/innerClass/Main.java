@@ -1,5 +1,7 @@
 package innerClass;
 
+import org.junit.Test;
+
 import innerClass.MemberInnerClass.Draw;
 import innerClass.StaticInnerClass.Inner;
 
@@ -19,4 +21,10 @@ public class Main {
 		
 		Inner inner = new StaticInnerClass.Inner();
 	}
+	
+	@Test
+	public void test2() {
+		new StaticInnerClass();
+	}
+	
 }
