@@ -1,4 +1,4 @@
-package sortingAlgorithm;
+package algorithm.sortingAlgorithm;
 
 /**
  * 希尔排序是希尔（Donald Shell）于1959年提出的一种排序算法。

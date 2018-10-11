@@ -1,4 +1,4 @@
-package sortingAlgorithm;
+package algorithm.sortingAlgorithm;
 
 /**
  * 堆排序（Heapsort）是指利用堆这种数据结构所设计的一种排序算法。

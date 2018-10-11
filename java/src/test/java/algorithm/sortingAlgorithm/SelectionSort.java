@@ -1,4 +1,4 @@
-package sortingAlgorithm;
+package algorithm.sortingAlgorithm;
 
 /**
  * 表现最稳定的排序算法之一，因为无论什么数据进去都是O(n2)的时间复杂度，所以用到它的时候，数据规模越小越好。

@@ -1,4 +1,4 @@
-package sortingAlgorithm;
+package algorithm.sortingAlgorithm;
 
 /**
  * 插入排序（Insertion-Sort）的算法描述是一种简单直观的排序算法。

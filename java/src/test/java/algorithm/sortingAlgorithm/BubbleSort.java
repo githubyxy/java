@@ -1,4 +1,4 @@
-package sortingAlgorithm;
+package algorithm.sortingAlgorithm;
 
 /**
  * 冒泡排序是一种简单的排序算法。
