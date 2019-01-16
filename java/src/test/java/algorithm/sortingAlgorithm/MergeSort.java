@@ -2,6 +2,8 @@ package algorithm.sortingAlgorithm;
 
 import java.util.Arrays;
 
+import org.effectivejava.examples.chapter05.item28.Swap;
+
 /**
  * 和选择排序一样，归并排序的性能不受输入数据的影响，但表现比选择排序好的多，因为始终都是O(n log n）的时间复杂度。代价是需要额外的内存空间。
  * 归并排序是建立在归并操作上的一种有效的排序算法。该算法是采用分治法（Divide and Conquer）的一个非常典型的应用。
@@ -51,10 +53,80 @@ public class MergeSort {
     }
     
     public static void main(String[] args) {
-		int[] array = new int[]{8,9,1,7,2,3,5,4,6,0};
-		array = mergeSort(array);
+		int[] array = new int[]{0,8,9,1,7,2,3,5,4,6};
+//		array = mergeSort(array);
+		array = mergeSort2(array);
 		for (int i = 0; i < array.length; i++) {
 			System.out.println(array[i]);
 		}
  	}
+    
+    
+    // 非递归 归并算法
+    public static int[] mergeSort2(int[] a) {
+        if (a.length < 2) 
+        		return a;
+        int len = 1;
+        int[] array = new int[10];
+        while(len < a.length){
+            for(int i = 0; i < a.length; i += 2*len){
+            		Merge(a, i, len);
+            }
+            len *= 2;
+        }
+        return a;
+    }
+    
+
+    private static void Merge(int[] a, int i, int len){
+        int start = i;
+        int len_i = i + len;//归并的前半部分数组
+        int j = i + len;
+        int len_j = j +len;//归并的后半部分数组
+        int[] temp = new int[2*len];
+        int count = 0;
+        while(i < len_i && j < len_j && j < a.length){
+            if(a[i] <= a[j]){
+                temp[count++] = a[i++];
+            }
+            else{
+                temp[count++] = a[j++];
+            }
+        }
+        while(i < len_i && i < a.length){//注意：这里i也有可能超过数组长度
+            temp[count++] = a[i++];
+        }
+        while(j < len_j && j < a.length){
+            temp[count++] = a[j++];
+        }
+        count = 0;
+        while(start < j && start < a.length){
+            a[start++] = temp[count++];
+        }
+    }
+	
+	private static void Merge(int[] SR, int[] TR, int i, int m, int n) {
+		// TODO Auto-generated method stub
+		int j,k,l;
+		for (j = m+1,k = i;i<=m && j<n; k++) {
+			if (SR[i] < SR[j]) {
+				TR[k] = SR[i++];
+			}else {
+				TR[k] = SR[j++];
+			}
+		}
+		if (i<m) {
+			for (l = 0; l <= m-i; l++) {
+				TR[k+1]=SR[i+1];
+			}
+		}
+		
+		if (j<n-1) {
+			for (l = 0; l < n-j; l++) {
+				TR[k+1]=SR[j+1];
+			}
+		}
+		
+	}
+    
 }

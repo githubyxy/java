@@ -99,6 +99,7 @@ public class SynchronizedDemoTest {
 	@Test
 	public void test5() throws InterruptedException {
 		MyDomain5_Son son = new MyDomain5_Son();
+		
 		Mythread5 a = new Mythread5(son);
 		Mythread5 b = new Mythread5(son);
 		a.start();
