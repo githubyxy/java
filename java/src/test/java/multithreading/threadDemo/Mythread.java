@@ -1,7 +1,7 @@
 package multithreading.threadDemo;
 
 /**
- * 继承Thread，重写父类的run()方法。
+ * 继承Thread，重写父类的run()方法。master
  * @author yuxiaoyu
  *
  */
