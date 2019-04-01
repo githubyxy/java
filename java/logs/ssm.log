@@ -2231,4 +2231,733 @@ Caused by: java.net.ConnectException: Connection refused
   [INFO] [2019-02-12 11:44:33][org.apache.kafka.clients.consumer.internals.AbstractCoordinator][Consumer clientId=test, groupId=test] (Re-)joining group
   [INFO] [2019-02-12 11:44:34][org.apache.kafka.clients.consumer.internals.AbstractCoordinator][Consumer clientId=test, groupId=test] Successfully joined group with generation 15
   [INFO] [2019-02-12 11:44:34][org.apache.kafka.clients.consumer.internals.ConsumerCoordinator][Consumer clientId=test, groupId=test] Setting newly assigned partitions [education-info-0, education-info-1]
+  [INFO] [2019-02-27 20:36:24][org.apache.kafka.clients.consumer.ConsumerConfig]ConsumerConfig values: 
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = latest
+	bootstrap.servers = [10.57.17.77:9192]
+	check.crcs = true
+	client.id = test
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = false
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = test
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+  [INFO] [2019-02-27 20:36:24][org.apache.kafka.common.utils.AppInfoParser]Kafka version : 2.0.0
+  [INFO] [2019-02-27 20:36:24][org.apache.kafka.common.utils.AppInfoParser]Kafka commitId : 3402a8361b734732
+  [WARN] [2019-02-27 20:36:24][org.apache.kafka.clients.NetworkClient][Consumer clientId=test, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+  [WARN] [2019-02-27 20:36:24][org.apache.kafka.clients.NetworkClient][Consumer clientId=test, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+  [WARN] [2019-02-27 20:36:25][org.apache.kafka.clients.NetworkClient][Consumer clientId=test, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+  [WARN] [2019-02-27 20:36:25][org.apache.kafka.clients.NetworkClient][Consumer clientId=test, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+  [WARN] [2019-02-27 20:36:25][org.apache.kafka.clients.NetworkClient][Consumer clientId=test, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+  [WARN] [2019-02-27 20:36:26][org.apache.kafka.clients.NetworkClient][Consumer clientId=test, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+  [WARN] [2019-02-27 20:36:27][org.apache.kafka.clients.NetworkClient][Consumer clientId=test, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+  [WARN] [2019-02-27 20:36:28][org.apache.kafka.clients.NetworkClient][Consumer clientId=test, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+  [WARN] [2019-02-27 20:36:29][org.apache.kafka.clients.NetworkClient][Consumer clientId=test, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+  [WARN] [2019-02-27 20:36:31][org.apache.kafka.clients.NetworkClient][Consumer clientId=test, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+  [WARN] [2019-02-27 20:36:32][org.apache.kafka.clients.NetworkClient][Consumer clientId=test, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+  [WARN] [2019-02-27 20:36:33][org.apache.kafka.clients.NetworkClient][Consumer clientId=test, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+  [WARN] [2019-02-27 20:36:34][org.apache.kafka.clients.NetworkClient][Consumer clientId=test, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+  [WARN] [2019-02-27 20:36:35][org.apache.kafka.clients.NetworkClient][Consumer clientId=test, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+  [WARN] [2019-02-27 20:36:36][org.apache.kafka.clients.NetworkClient][Consumer clientId=test, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+  [WARN] [2019-02-27 20:36:37][org.apache.kafka.clients.NetworkClient][Consumer clientId=test, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+  [WARN] [2019-02-27 20:36:38][org.apache.kafka.clients.NetworkClient][Consumer clientId=test, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+  [WARN] [2019-02-27 20:36:39][org.apache.kafka.clients.NetworkClient][Consumer clientId=test, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+  [WARN] [2019-02-27 20:36:40][org.apache.kafka.clients.NetworkClient][Consumer clientId=test, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+  [WARN] [2019-02-27 20:36:41][org.apache.kafka.clients.NetworkClient][Consumer clientId=test, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+  [INFO] [2019-02-27 20:36:41][org.apache.kafka.clients.producer.ProducerConfig]ProducerConfig values: 
+	acks = 0
+	batch.size = 16384
+	bootstrap.servers = [10.57.17.77:9192]
+	buffer.memory = 33554432
+	client.id = 
+	compression.type = none
+	connections.max.idle.ms = 540000
+	enable.idempotence = false
+	interceptor.classes = []
+	key.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	linger.ms = 0
+	max.block.ms = 60000
+	max.in.flight.requests.per.connection = 5
+	max.request.size = 1048576
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partitioner.class = class org.apache.kafka.clients.producer.internals.DefaultPartitioner
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 0
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.timeout.ms = 60000
+	transactional.id = null
+	value.serializer = class org.apache.kafka.common.serialization.StringSerializer
+
+  [INFO] [2019-02-27 20:36:42][org.apache.kafka.common.utils.AppInfoParser]Kafka version : 2.0.0
+  [INFO] [2019-02-27 20:36:42][org.apache.kafka.common.utils.AppInfoParser]Kafka commitId : 3402a8361b734732
+  [WARN] [2019-02-27 20:36:42][org.apache.kafka.clients.NetworkClient][Producer clientId=producer-1] Connection to node -1 could not be established. Broker may not be available.
+  [WARN] [2019-02-27 20:36:42][org.apache.kafka.clients.NetworkClient][Consumer clientId=test, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+  [WARN] [2019-02-27 20:36:42][org.apache.kafka.clients.NetworkClient][Producer clientId=producer-1] Connection to node -1 could not be established. Broker may not be available.
+  [WARN] [2019-02-27 20:36:42][org.apache.kafka.clients.NetworkClient][Producer clientId=producer-1] Connection to node -1 could not be established. Broker may not be available.
+  [WARN] [2019-02-27 20:36:42][org.apache.kafka.clients.NetworkClient][Producer clientId=producer-1] Connection to node -1 could not be established. Broker may not be available.
+  [WARN] [2019-02-27 20:36:42][org.apache.kafka.clients.NetworkClient][Producer clientId=producer-1] Connection to node -1 could not be established. Broker may not be available.
+  [WARN] [2019-02-27 20:36:43][org.apache.kafka.clients.NetworkClient][Consumer clientId=test, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+  [WARN] [2019-02-27 20:36:43][org.apache.kafka.clients.NetworkClient][Producer clientId=producer-1] Connection to node -1 could not be established. Broker may not be available.
+  [WARN] [2019-02-27 20:36:44][org.apache.kafka.clients.NetworkClient][Consumer clientId=test, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+  [WARN] [2019-02-27 20:36:44][org.apache.kafka.clients.NetworkClient][Producer clientId=producer-1] Connection to node -1 could not be established. Broker may not be available.
+  [WARN] [2019-02-27 20:36:45][org.apache.kafka.clients.NetworkClient][Consumer clientId=test, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+  [WARN] [2019-02-27 20:36:45][org.apache.kafka.clients.NetworkClient][Producer clientId=producer-1] Connection to node -1 could not be established. Broker may not be available.
+  [WARN] [2019-02-27 20:36:46][org.apache.kafka.clients.NetworkClient][Consumer clientId=test, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+  [WARN] [2019-02-27 20:36:47][org.apache.kafka.clients.NetworkClient][Producer clientId=producer-1] Connection to node -1 could not be established. Broker may not be available.
+  [WARN] [2019-02-27 20:36:47][org.apache.kafka.clients.NetworkClient][Consumer clientId=test, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+  [WARN] [2019-02-27 20:36:47][org.apache.kafka.clients.NetworkClient][Producer clientId=producer-1] Connection to node -1 could not be established. Broker may not be available.
+  [WARN] [2019-02-27 20:36:48][org.apache.kafka.clients.NetworkClient][Consumer clientId=test, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+  [WARN] [2019-02-27 20:36:49][org.apache.kafka.clients.NetworkClient][Producer clientId=producer-1] Connection to node -1 could not be established. Broker may not be available.
+  [WARN] [2019-02-27 20:36:49][org.apache.kafka.clients.NetworkClient][Consumer clientId=test, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+  [WARN] [2019-02-27 20:36:49][org.apache.kafka.clients.NetworkClient][Producer clientId=producer-1] Connection to node -1 could not be established. Broker may not be available.
+  [WARN] [2019-02-27 20:36:50][org.apache.kafka.clients.NetworkClient][Consumer clientId=test, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+  [WARN] [2019-02-27 20:36:51][org.apache.kafka.clients.NetworkClient][Producer clientId=producer-1] Connection to node -1 could not be established. Broker may not be available.
+  [WARN] [2019-02-27 20:36:51][org.apache.kafka.clients.NetworkClient][Consumer clientId=test, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+  [WARN] [2019-02-27 20:36:52][org.apache.kafka.clients.NetworkClient][Producer clientId=producer-1] Connection to node -1 could not be established. Broker may not be available.
+  [WARN] [2019-02-27 20:36:52][org.apache.kafka.clients.NetworkClient][Consumer clientId=test, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+  [WARN] [2019-02-27 20:36:53][org.apache.kafka.clients.NetworkClient][Producer clientId=producer-1] Connection to node -1 could not be established. Broker may not be available.
+  [WARN] [2019-02-27 20:36:53][org.apache.kafka.clients.NetworkClient][Consumer clientId=test, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+  [WARN] [2019-02-27 20:36:54][org.apache.kafka.clients.NetworkClient][Producer clientId=producer-1] Connection to node -1 could not be established. Broker may not be available.
+  [WARN] [2019-02-27 20:36:54][org.apache.kafka.clients.NetworkClient][Consumer clientId=test, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+  [WARN] [2019-02-27 20:36:55][org.apache.kafka.clients.NetworkClient][Producer clientId=producer-1] Connection to node -1 could not be established. Broker may not be available.
+  [WARN] [2019-02-27 20:36:55][org.apache.kafka.clients.NetworkClient][Consumer clientId=test, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+  [WARN] [2019-02-27 20:36:56][org.apache.kafka.clients.NetworkClient][Producer clientId=producer-1] Connection to node -1 could not be established. Broker may not be available.
+  [WARN] [2019-02-27 20:36:56][org.apache.kafka.clients.NetworkClient][Consumer clientId=test, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+  [WARN] [2019-02-27 20:36:57][org.apache.kafka.clients.NetworkClient][Producer clientId=producer-1] Connection to node -1 could not be established. Broker may not be available.
+  [WARN] [2019-02-27 20:36:57][org.apache.kafka.clients.NetworkClient][Consumer clientId=test, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+  [WARN] [2019-02-27 20:36:58][org.apache.kafka.clients.NetworkClient][Producer clientId=producer-1] Connection to node -1 could not be established. Broker may not be available.
+  [WARN] [2019-02-27 20:36:58][org.apache.kafka.clients.NetworkClient][Consumer clientId=test, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+  [WARN] [2019-02-27 20:36:59][org.apache.kafka.clients.NetworkClient][Producer clientId=producer-1] Connection to node -1 could not be established. Broker may not be available.
+  [WARN] [2019-02-27 20:36:59][org.apache.kafka.clients.NetworkClient][Consumer clientId=test, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+  [WARN] [2019-02-27 20:37:00][org.apache.kafka.clients.NetworkClient][Producer clientId=producer-1] Connection to node -1 could not be established. Broker may not be available.
+  [WARN] [2019-02-27 20:37:00][org.apache.kafka.clients.NetworkClient][Consumer clientId=test, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+  [WARN] [2019-02-27 20:37:01][org.apache.kafka.clients.NetworkClient][Producer clientId=producer-1] Connection to node -1 could not be established. Broker may not be available.
+  [WARN] [2019-02-27 20:37:01][org.apache.kafka.clients.NetworkClient][Consumer clientId=test, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+  [WARN] [2019-02-27 20:37:02][org.apache.kafka.clients.NetworkClient][Consumer clientId=test, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+  [WARN] [2019-02-27 20:37:02][org.apache.kafka.clients.NetworkClient][Producer clientId=producer-1] Connection to node -1 could not be established. Broker may not be available.
+  [WARN] [2019-02-27 20:37:03][org.apache.kafka.clients.NetworkClient][Consumer clientId=test, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+  [WARN] [2019-02-27 20:37:03][org.apache.kafka.clients.NetworkClient][Producer clientId=producer-1] Connection to node -1 could not be established. Broker may not be available.
+  [WARN] [2019-02-27 20:37:04][org.apache.kafka.clients.NetworkClient][Consumer clientId=test, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+  [WARN] [2019-02-27 20:37:04][org.apache.kafka.clients.NetworkClient][Producer clientId=producer-1] Connection to node -1 could not be established. Broker may not be available.
+  [WARN] [2019-02-27 20:37:05][org.apache.kafka.clients.NetworkClient][Producer clientId=producer-1] Connection to node -1 could not be established. Broker may not be available.
+  [WARN] [2019-02-27 20:37:05][org.apache.kafka.clients.NetworkClient][Consumer clientId=test, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+  [WARN] [2019-02-27 20:37:06][org.apache.kafka.clients.NetworkClient][Consumer clientId=test, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+  [WARN] [2019-02-27 20:37:07][org.apache.kafka.clients.NetworkClient][Producer clientId=producer-1] Connection to node -1 could not be established. Broker may not be available.
+  [WARN] [2019-02-27 20:37:08][org.apache.kafka.clients.NetworkClient][Consumer clientId=test, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+  [INFO] [2019-02-27 20:37:37][org.apache.kafka.clients.consumer.ConsumerConfig]ConsumerConfig values: 
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = latest
+	bootstrap.servers = [10.58.10.103:9192]
+	check.crcs = true
+	client.id = test
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = false
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = test
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+  [INFO] [2019-02-27 20:37:37][org.apache.kafka.common.utils.AppInfoParser]Kafka version : 2.0.0
+  [INFO] [2019-02-27 20:37:37][org.apache.kafka.common.utils.AppInfoParser]Kafka commitId : 3402a8361b734732
+  [WARN] [2019-02-27 20:37:37][org.apache.kafka.clients.NetworkClient][Consumer clientId=test, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+  [WARN] [2019-02-27 20:37:37][org.apache.kafka.clients.NetworkClient][Consumer clientId=test, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+  [WARN] [2019-02-27 20:37:37][org.apache.kafka.clients.NetworkClient][Consumer clientId=test, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+  [WARN] [2019-02-27 20:37:37][org.apache.kafka.clients.NetworkClient][Consumer clientId=test, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+  [WARN] [2019-02-27 20:37:38][org.apache.kafka.clients.NetworkClient][Consumer clientId=test, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+  [WARN] [2019-02-27 20:37:39][org.apache.kafka.clients.NetworkClient][Consumer clientId=test, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+  [WARN] [2019-02-27 20:37:40][org.apache.kafka.clients.NetworkClient][Consumer clientId=test, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+  [WARN] [2019-02-27 20:37:41][org.apache.kafka.clients.NetworkClient][Consumer clientId=test, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+  [WARN] [2019-02-27 20:37:42][org.apache.kafka.clients.NetworkClient][Consumer clientId=test, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+  [WARN] [2019-02-27 20:37:43][org.apache.kafka.clients.NetworkClient][Consumer clientId=test, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+  [WARN] [2019-02-27 20:37:44][org.apache.kafka.clients.NetworkClient][Consumer clientId=test, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+  [WARN] [2019-02-27 20:37:45][org.apache.kafka.clients.NetworkClient][Consumer clientId=test, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+  [WARN] [2019-02-27 20:37:46][org.apache.kafka.clients.NetworkClient][Consumer clientId=test, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+  [WARN] [2019-02-27 20:37:47][org.apache.kafka.clients.NetworkClient][Consumer clientId=test, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+  [WARN] [2019-02-27 20:37:48][org.apache.kafka.clients.NetworkClient][Consumer clientId=test, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+  [WARN] [2019-02-27 20:37:49][org.apache.kafka.clients.NetworkClient][Consumer clientId=test, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+  [WARN] [2019-02-27 20:37:50][org.apache.kafka.clients.NetworkClient][Consumer clientId=test, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+  [WARN] [2019-02-27 20:37:51][org.apache.kafka.clients.NetworkClient][Consumer clientId=test, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+  [WARN] [2019-02-27 20:37:52][org.apache.kafka.clients.NetworkClient][Consumer clientId=test, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+  [WARN] [2019-02-27 20:37:53][org.apache.kafka.clients.NetworkClient][Consumer clientId=test, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+  [WARN] [2019-02-27 20:37:54][org.apache.kafka.clients.NetworkClient][Consumer clientId=test, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+  [WARN] [2019-02-27 20:37:55][org.apache.kafka.clients.NetworkClient][Consumer clientId=test, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+  [WARN] [2019-02-27 20:37:56][org.apache.kafka.clients.NetworkClient][Consumer clientId=test, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+  [WARN] [2019-02-27 20:37:57][org.apache.kafka.clients.NetworkClient][Consumer clientId=test, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+  [WARN] [2019-02-27 20:37:58][org.apache.kafka.clients.NetworkClient][Consumer clientId=test, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+  [WARN] [2019-02-27 20:37:59][org.apache.kafka.clients.NetworkClient][Consumer clientId=test, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+  [WARN] [2019-02-27 20:38:00][org.apache.kafka.clients.NetworkClient][Consumer clientId=test, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+  [WARN] [2019-02-27 20:38:01][org.apache.kafka.clients.NetworkClient][Consumer clientId=test, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+  [WARN] [2019-02-27 20:38:02][org.apache.kafka.clients.NetworkClient][Consumer clientId=test, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+  [WARN] [2019-02-27 20:38:03][org.apache.kafka.clients.NetworkClient][Consumer clientId=test, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+  [WARN] [2019-02-27 20:38:05][org.apache.kafka.clients.NetworkClient][Consumer clientId=test, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+  [WARN] [2019-02-27 20:38:06][org.apache.kafka.clients.NetworkClient][Consumer clientId=test, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+  [WARN] [2019-02-27 20:38:07][org.apache.kafka.clients.NetworkClient][Consumer clientId=test, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+  [WARN] [2019-02-27 20:38:08][org.apache.kafka.clients.NetworkClient][Consumer clientId=test, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+  [WARN] [2019-02-27 20:38:09][org.apache.kafka.clients.NetworkClient][Consumer clientId=test, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+  [WARN] [2019-02-27 20:38:10][org.apache.kafka.clients.NetworkClient][Consumer clientId=test, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+  [WARN] [2019-02-27 20:38:11][org.apache.kafka.clients.NetworkClient][Consumer clientId=test, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+  [WARN] [2019-02-27 20:38:12][org.apache.kafka.clients.NetworkClient][Consumer clientId=test, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+  [WARN] [2019-02-27 20:38:13][org.apache.kafka.clients.NetworkClient][Consumer clientId=test, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+  [WARN] [2019-02-27 20:38:14][org.apache.kafka.clients.NetworkClient][Consumer clientId=test, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+  [WARN] [2019-02-27 20:38:15][org.apache.kafka.clients.NetworkClient][Consumer clientId=test, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+  [WARN] [2019-02-27 20:38:16][org.apache.kafka.clients.NetworkClient][Consumer clientId=test, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+  [WARN] [2019-02-27 20:38:18][org.apache.kafka.clients.NetworkClient][Consumer clientId=test, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+  [WARN] [2019-02-27 20:38:19][org.apache.kafka.clients.NetworkClient][Consumer clientId=test, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+  [WARN] [2019-02-27 20:38:19][org.apache.kafka.clients.NetworkClient][Consumer clientId=test, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+  [WARN] [2019-02-27 20:38:20][org.apache.kafka.clients.NetworkClient][Consumer clientId=test, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+  [WARN] [2019-02-27 20:38:21][org.apache.kafka.clients.NetworkClient][Consumer clientId=test, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+  [WARN] [2019-02-27 20:38:22][org.apache.kafka.clients.NetworkClient][Consumer clientId=test, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+  [WARN] [2019-02-27 20:38:24][org.apache.kafka.clients.NetworkClient][Consumer clientId=test, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+  [WARN] [2019-02-27 20:38:25][org.apache.kafka.clients.NetworkClient][Consumer clientId=test, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+  [WARN] [2019-02-27 20:38:26][org.apache.kafka.clients.NetworkClient][Consumer clientId=test, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+  [WARN] [2019-02-27 20:38:27][org.apache.kafka.clients.NetworkClient][Consumer clientId=test, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+  [WARN] [2019-02-27 20:38:28][org.apache.kafka.clients.NetworkClient][Consumer clientId=test, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+  [WARN] [2019-02-27 20:38:29][org.apache.kafka.clients.NetworkClient][Consumer clientId=test, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+  [WARN] [2019-02-27 20:38:30][org.apache.kafka.clients.NetworkClient][Consumer clientId=test, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+  [WARN] [2019-02-27 20:38:31][org.apache.kafka.clients.NetworkClient][Consumer clientId=test, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+  [WARN] [2019-02-27 20:38:32][org.apache.kafka.clients.NetworkClient][Consumer clientId=test, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+  [WARN] [2019-02-27 20:38:33][org.apache.kafka.clients.NetworkClient][Consumer clientId=test, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+  [WARN] [2019-02-27 20:38:34][org.apache.kafka.clients.NetworkClient][Consumer clientId=test, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+  [WARN] [2019-02-27 20:38:35][org.apache.kafka.clients.NetworkClient][Consumer clientId=test, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+  [WARN] [2019-02-27 20:38:36][org.apache.kafka.clients.NetworkClient][Consumer clientId=test, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+  [WARN] [2019-02-27 20:38:37][org.apache.kafka.clients.NetworkClient][Consumer clientId=test, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+  [WARN] [2019-02-27 20:38:38][org.apache.kafka.clients.NetworkClient][Consumer clientId=test, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+  [WARN] [2019-02-27 20:38:39][org.apache.kafka.clients.NetworkClient][Consumer clientId=test, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+  [WARN] [2019-02-27 20:38:40][org.apache.kafka.clients.NetworkClient][Consumer clientId=test, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+  [WARN] [2019-02-27 20:38:41][org.apache.kafka.clients.NetworkClient][Consumer clientId=test, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+  [WARN] [2019-02-27 20:38:42][org.apache.kafka.clients.NetworkClient][Consumer clientId=test, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+  [WARN] [2019-02-27 20:38:43][org.apache.kafka.clients.NetworkClient][Consumer clientId=test, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+  [WARN] [2019-02-27 20:38:44][org.apache.kafka.clients.NetworkClient][Consumer clientId=test, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+  [WARN] [2019-02-27 20:38:45][org.apache.kafka.clients.NetworkClient][Consumer clientId=test, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+  [WARN] [2019-02-27 20:38:46][org.apache.kafka.clients.NetworkClient][Consumer clientId=test, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+  [WARN] [2019-02-27 20:38:47][org.apache.kafka.clients.NetworkClient][Consumer clientId=test, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+  [WARN] [2019-02-27 20:38:48][org.apache.kafka.clients.NetworkClient][Consumer clientId=test, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+  [WARN] [2019-02-27 20:38:49][org.apache.kafka.clients.NetworkClient][Consumer clientId=test, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+  [WARN] [2019-02-27 20:38:50][org.apache.kafka.clients.NetworkClient][Consumer clientId=test, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+  [WARN] [2019-02-27 20:38:51][org.apache.kafka.clients.NetworkClient][Consumer clientId=test, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+  [WARN] [2019-02-27 20:38:52][org.apache.kafka.clients.NetworkClient][Consumer clientId=test, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+  [WARN] [2019-02-27 20:38:53][org.apache.kafka.clients.NetworkClient][Consumer clientId=test, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+  [WARN] [2019-02-27 20:38:54][org.apache.kafka.clients.NetworkClient][Consumer clientId=test, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+  [WARN] [2019-02-27 20:38:55][org.apache.kafka.clients.NetworkClient][Consumer clientId=test, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+  [WARN] [2019-02-27 20:38:56][org.apache.kafka.clients.NetworkClient][Consumer clientId=test, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+  [WARN] [2019-02-27 20:38:57][org.apache.kafka.clients.NetworkClient][Consumer clientId=test, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+  [WARN] [2019-02-27 20:38:58][org.apache.kafka.clients.NetworkClient][Consumer clientId=test, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+  [WARN] [2019-02-27 20:38:59][org.apache.kafka.clients.NetworkClient][Consumer clientId=test, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+  [WARN] [2019-02-27 20:39:00][org.apache.kafka.clients.NetworkClient][Consumer clientId=test, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+  [WARN] [2019-02-27 20:39:01][org.apache.kafka.clients.NetworkClient][Consumer clientId=test, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+  [WARN] [2019-02-27 20:39:02][org.apache.kafka.clients.NetworkClient][Consumer clientId=test, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+  [WARN] [2019-02-27 20:39:03][org.apache.kafka.clients.NetworkClient][Consumer clientId=test, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+  [WARN] [2019-02-27 20:39:04][org.apache.kafka.clients.NetworkClient][Consumer clientId=test, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+  [WARN] [2019-02-27 20:39:05][org.apache.kafka.clients.NetworkClient][Consumer clientId=test, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+  [WARN] [2019-02-27 20:39:06][org.apache.kafka.clients.NetworkClient][Consumer clientId=test, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+  [WARN] [2019-02-27 20:39:07][org.apache.kafka.clients.NetworkClient][Consumer clientId=test, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+  [WARN] [2019-02-27 20:39:08][org.apache.kafka.clients.NetworkClient][Consumer clientId=test, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+  [WARN] [2019-02-27 20:39:09][org.apache.kafka.clients.NetworkClient][Consumer clientId=test, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+  [WARN] [2019-02-27 20:39:10][org.apache.kafka.clients.NetworkClient][Consumer clientId=test, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+  [WARN] [2019-02-27 20:39:12][org.apache.kafka.clients.NetworkClient][Consumer clientId=test, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+  [WARN] [2019-02-27 20:39:13][org.apache.kafka.clients.NetworkClient][Consumer clientId=test, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+  [WARN] [2019-02-27 20:39:14][org.apache.kafka.clients.NetworkClient][Consumer clientId=test, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+  [WARN] [2019-02-27 20:39:15][org.apache.kafka.clients.NetworkClient][Consumer clientId=test, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+  [WARN] [2019-02-27 20:39:16][org.apache.kafka.clients.NetworkClient][Consumer clientId=test, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+  [WARN] [2019-02-27 20:39:17][org.apache.kafka.clients.NetworkClient][Consumer clientId=test, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+  [WARN] [2019-02-27 20:39:17][org.apache.kafka.clients.NetworkClient][Consumer clientId=test, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+  [WARN] [2019-02-27 20:39:19][org.apache.kafka.clients.NetworkClient][Consumer clientId=test, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+  [WARN] [2019-02-27 20:39:20][org.apache.kafka.clients.NetworkClient][Consumer clientId=test, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+  [WARN] [2019-02-27 20:39:21][org.apache.kafka.clients.NetworkClient][Consumer clientId=test, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+  [WARN] [2019-02-27 20:39:22][org.apache.kafka.clients.NetworkClient][Consumer clientId=test, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+  [WARN] [2019-02-27 20:39:23][org.apache.kafka.clients.NetworkClient][Consumer clientId=test, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+  [WARN] [2019-02-27 20:39:24][org.apache.kafka.clients.NetworkClient][Consumer clientId=test, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+  [WARN] [2019-02-27 20:39:25][org.apache.kafka.clients.NetworkClient][Consumer clientId=test, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+  [WARN] [2019-02-27 20:39:26][org.apache.kafka.clients.NetworkClient][Consumer clientId=test, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+  [WARN] [2019-02-27 20:39:27][org.apache.kafka.clients.NetworkClient][Consumer clientId=test, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+  [WARN] [2019-02-27 20:39:28][org.apache.kafka.clients.NetworkClient][Consumer clientId=test, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+  [WARN] [2019-02-27 20:39:29][org.apache.kafka.clients.NetworkClient][Consumer clientId=test, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+  [WARN] [2019-02-27 20:39:30][org.apache.kafka.clients.NetworkClient][Consumer clientId=test, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+  [WARN] [2019-02-27 20:39:31][org.apache.kafka.clients.NetworkClient][Consumer clientId=test, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+  [WARN] [2019-02-27 20:39:32][org.apache.kafka.clients.NetworkClient][Consumer clientId=test, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+  [WARN] [2019-02-27 20:39:33][org.apache.kafka.clients.NetworkClient][Consumer clientId=test, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+  [WARN] [2019-02-27 20:39:34][org.apache.kafka.clients.NetworkClient][Consumer clientId=test, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+  [WARN] [2019-02-27 20:39:35][org.apache.kafka.clients.NetworkClient][Consumer clientId=test, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+  [WARN] [2019-02-27 20:39:36][org.apache.kafka.clients.NetworkClient][Consumer clientId=test, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+  [WARN] [2019-02-27 20:39:38][org.apache.kafka.clients.NetworkClient][Consumer clientId=test, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+  [WARN] [2019-02-27 20:39:39][org.apache.kafka.clients.NetworkClient][Consumer clientId=test, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+  [WARN] [2019-02-27 20:39:40][org.apache.kafka.clients.NetworkClient][Consumer clientId=test, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+  [WARN] [2019-02-27 20:39:41][org.apache.kafka.clients.NetworkClient][Consumer clientId=test, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+  [WARN] [2019-02-27 20:39:41][org.apache.kafka.clients.NetworkClient][Consumer clientId=test, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+  [WARN] [2019-02-27 20:39:42][org.apache.kafka.clients.NetworkClient][Consumer clientId=test, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+  [WARN] [2019-02-27 20:39:44][org.apache.kafka.clients.NetworkClient][Consumer clientId=test, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+  [WARN] [2019-02-27 20:39:45][org.apache.kafka.clients.NetworkClient][Consumer clientId=test, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+  [WARN] [2019-02-27 20:39:45][org.apache.kafka.clients.NetworkClient][Consumer clientId=test, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+  [WARN] [2019-02-27 20:39:46][org.apache.kafka.clients.NetworkClient][Consumer clientId=test, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+  [WARN] [2019-02-27 20:39:47][org.apache.kafka.clients.NetworkClient][Consumer clientId=test, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+  [WARN] [2019-02-27 20:39:48][org.apache.kafka.clients.NetworkClient][Consumer clientId=test, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+  [WARN] [2019-02-27 20:39:49][org.apache.kafka.clients.NetworkClient][Consumer clientId=test, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+  [WARN] [2019-02-27 20:39:50][org.apache.kafka.clients.NetworkClient][Consumer clientId=test, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+  [WARN] [2019-02-27 20:39:51][org.apache.kafka.clients.NetworkClient][Consumer clientId=test, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+  [WARN] [2019-02-27 20:39:52][org.apache.kafka.clients.NetworkClient][Consumer clientId=test, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+  [WARN] [2019-02-27 20:39:53][org.apache.kafka.clients.NetworkClient][Consumer clientId=test, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+  [WARN] [2019-02-27 20:39:55][org.apache.kafka.clients.NetworkClient][Consumer clientId=test, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+  [WARN] [2019-02-27 20:39:56][org.apache.kafka.clients.NetworkClient][Consumer clientId=test, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+  [WARN] [2019-02-27 20:39:57][org.apache.kafka.clients.NetworkClient][Consumer clientId=test, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+  [WARN] [2019-02-27 20:39:58][org.apache.kafka.clients.NetworkClient][Consumer clientId=test, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+  [WARN] [2019-02-27 20:39:59][org.apache.kafka.clients.NetworkClient][Consumer clientId=test, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+  [WARN] [2019-02-27 20:40:00][org.apache.kafka.clients.NetworkClient][Consumer clientId=test, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+  [WARN] [2019-02-27 20:40:01][org.apache.kafka.clients.NetworkClient][Consumer clientId=test, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+  [WARN] [2019-02-27 20:40:02][org.apache.kafka.clients.NetworkClient][Consumer clientId=test, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+  [WARN] [2019-02-27 20:40:03][org.apache.kafka.clients.NetworkClient][Consumer clientId=test, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+  [WARN] [2019-02-27 20:40:04][org.apache.kafka.clients.NetworkClient][Consumer clientId=test, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+  [WARN] [2019-02-27 20:40:05][org.apache.kafka.clients.NetworkClient][Consumer clientId=test, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+  [WARN] [2019-02-27 20:40:06][org.apache.kafka.clients.NetworkClient][Consumer clientId=test, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+  [WARN] [2019-02-27 20:40:07][org.apache.kafka.clients.NetworkClient][Consumer clientId=test, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+  [WARN] [2019-02-27 20:40:08][org.apache.kafka.clients.NetworkClient][Consumer clientId=test, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+  [WARN] [2019-02-27 20:40:09][org.apache.kafka.clients.NetworkClient][Consumer clientId=test, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+  [WARN] [2019-02-27 20:40:10][org.apache.kafka.clients.NetworkClient][Consumer clientId=test, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+  [WARN] [2019-02-27 20:40:11][org.apache.kafka.clients.NetworkClient][Consumer clientId=test, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+  [INFO] [2019-02-27 20:42:04][org.apache.kafka.clients.producer.ProducerConfig]ProducerConfig values: 
+	acks = 0
+	batch.size = 16384
+	bootstrap.servers = [10.58.10.103:9192]
+	buffer.memory = 33554432
+	client.id = 
+	compression.type = none
+	connections.max.idle.ms = 540000
+	enable.idempotence = false
+	interceptor.classes = []
+	key.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	linger.ms = 0
+	max.block.ms = 60000
+	max.in.flight.requests.per.connection = 5
+	max.request.size = 1048576
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partitioner.class = class org.apache.kafka.clients.producer.internals.DefaultPartitioner
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 0
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.timeout.ms = 60000
+	transactional.id = null
+	value.serializer = class org.apache.kafka.common.serialization.StringSerializer
+
+  [INFO] [2019-02-27 20:42:04][org.apache.kafka.common.utils.AppInfoParser]Kafka version : 2.0.0
+  [INFO] [2019-02-27 20:42:04][org.apache.kafka.common.utils.AppInfoParser]Kafka commitId : 3402a8361b734732
+  [WARN] [2019-02-27 20:42:04][org.apache.kafka.clients.NetworkClient][Producer clientId=producer-1] Connection to node -1 could not be established. Broker may not be available.
+  [WARN] [2019-02-27 20:42:04][org.apache.kafka.clients.NetworkClient][Producer clientId=producer-1] Connection to node -1 could not be established. Broker may not be available.
+  [WARN] [2019-02-27 20:42:04][org.apache.kafka.clients.NetworkClient][Producer clientId=producer-1] Connection to node -1 could not be established. Broker may not be available.
+  [WARN] [2019-02-27 20:42:04][org.apache.kafka.clients.NetworkClient][Producer clientId=producer-1] Connection to node -1 could not be established. Broker may not be available.
+  [WARN] [2019-02-27 20:42:05][org.apache.kafka.clients.NetworkClient][Producer clientId=producer-1] Connection to node -1 could not be established. Broker may not be available.
+  [WARN] [2019-02-27 20:42:05][org.apache.kafka.clients.NetworkClient][Producer clientId=producer-1] Connection to node -1 could not be established. Broker may not be available.
+  [WARN] [2019-02-27 20:42:07][org.apache.kafka.clients.NetworkClient][Producer clientId=producer-1] Connection to node -1 could not be established. Broker may not be available.
+  [WARN] [2019-02-27 20:42:08][org.apache.kafka.clients.NetworkClient][Producer clientId=producer-1] Connection to node -1 could not be established. Broker may not be available.
+  [WARN] [2019-02-27 20:42:09][org.apache.kafka.clients.NetworkClient][Producer clientId=producer-1] Connection to node -1 could not be established. Broker may not be available.
+  [WARN] [2019-02-27 20:42:10][org.apache.kafka.clients.NetworkClient][Producer clientId=producer-1] Connection to node -1 could not be established. Broker may not be available.
+  [WARN] [2019-02-27 20:42:11][org.apache.kafka.clients.NetworkClient][Producer clientId=producer-1] Connection to node -1 could not be established. Broker may not be available.
+  [WARN] [2019-02-27 20:42:12][org.apache.kafka.clients.NetworkClient][Producer clientId=producer-1] Connection to node -1 could not be established. Broker may not be available.
+  [WARN] [2019-02-27 20:42:12][org.apache.kafka.clients.NetworkClient][Producer clientId=producer-1] Connection to node -1 could not be established. Broker may not be available.
+  [WARN] [2019-02-27 20:42:14][org.apache.kafka.clients.NetworkClient][Producer clientId=producer-1] Connection to node -1 could not be established. Broker may not be available.
+  [WARN] [2019-02-27 20:42:15][org.apache.kafka.clients.NetworkClient][Producer clientId=producer-1] Connection to node -1 could not be established. Broker may not be available.
+  [WARN] [2019-02-27 20:42:16][org.apache.kafka.clients.NetworkClient][Producer clientId=producer-1] Connection to node -1 could not be established. Broker may not be available.
+  [WARN] [2019-02-27 20:42:17][org.apache.kafka.clients.NetworkClient][Producer clientId=producer-1] Connection to node -1 could not be established. Broker may not be available.
+  [WARN] [2019-02-27 20:42:18][org.apache.kafka.clients.NetworkClient][Producer clientId=producer-1] Connection to node -1 could not be established. Broker may not be available.
+  [WARN] [2019-02-27 20:42:19][org.apache.kafka.clients.NetworkClient][Producer clientId=producer-1] Connection to node -1 could not be established. Broker may not be available.
+  [WARN] [2019-02-27 20:42:20][org.apache.kafka.clients.NetworkClient][Producer clientId=producer-1] Connection to node -1 could not be established. Broker may not be available.
+  [WARN] [2019-02-27 20:42:21][org.apache.kafka.clients.NetworkClient][Producer clientId=producer-1] Connection to node -1 could not be established. Broker may not be available.
+  [WARN] [2019-02-27 20:42:22][org.apache.kafka.clients.NetworkClient][Producer clientId=producer-1] Connection to node -1 could not be established. Broker may not be available.
+  [WARN] [2019-02-27 20:42:23][org.apache.kafka.clients.NetworkClient][Producer clientId=producer-1] Connection to node -1 could not be established. Broker may not be available.
+  [WARN] [2019-02-27 20:42:24][org.apache.kafka.clients.NetworkClient][Producer clientId=producer-1] Connection to node -1 could not be established. Broker may not be available.
+  [WARN] [2019-02-27 20:42:26][org.apache.kafka.clients.NetworkClient][Producer clientId=producer-1] Connection to node -1 could not be established. Broker may not be available.
+  [WARN] [2019-02-27 20:42:27][org.apache.kafka.clients.NetworkClient][Producer clientId=producer-1] Connection to node -1 could not be established. Broker may not be available.
+  [INFO] [2019-02-28 09:26:57][org.apache.kafka.clients.producer.ProducerConfig]ProducerConfig values: 
+	acks = 0
+	batch.size = 16384
+	bootstrap.servers = [10.58.10.103:9192]
+	buffer.memory = 33554432
+	client.id = 
+	compression.type = none
+	connections.max.idle.ms = 540000
+	enable.idempotence = false
+	interceptor.classes = []
+	key.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	linger.ms = 0
+	max.block.ms = 60000
+	max.in.flight.requests.per.connection = 5
+	max.request.size = 1048576
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partitioner.class = class org.apache.kafka.clients.producer.internals.DefaultPartitioner
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 0
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.timeout.ms = 60000
+	transactional.id = null
+	value.serializer = class org.apache.kafka.common.serialization.StringSerializer
+
+  [INFO] [2019-02-28 09:26:58][org.apache.kafka.common.utils.AppInfoParser]Kafka version : 2.0.0
+  [INFO] [2019-02-28 09:26:58][org.apache.kafka.common.utils.AppInfoParser]Kafka commitId : 3402a8361b734732
+  [INFO] [2019-02-28 09:26:58][org.apache.kafka.clients.Metadata]Cluster ID: GMjhXE3BRBuWxX3HEAGq_w
+  [INFO] [2019-02-28 09:26:58][org.apache.kafka.clients.producer.KafkaProducer][Producer clientId=producer-1] Closing the Kafka producer with timeoutMillis = 9223372036854775807 ms.
+  [INFO] [2019-02-28 09:27:18][org.apache.kafka.clients.consumer.ConsumerConfig]ConsumerConfig values: 
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = latest
+	bootstrap.servers = [10.58.10.103:9192]
+	check.crcs = true
+	client.id = test
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = false
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = test
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+  [INFO] [2019-02-28 09:27:18][org.apache.kafka.common.utils.AppInfoParser]Kafka version : 2.0.0
+  [INFO] [2019-02-28 09:27:18][org.apache.kafka.common.utils.AppInfoParser]Kafka commitId : 3402a8361b734732
+  [INFO] [2019-02-28 09:27:18][org.apache.kafka.clients.Metadata]Cluster ID: GMjhXE3BRBuWxX3HEAGq_w
+  [INFO] [2019-02-28 09:27:18][org.apache.kafka.clients.consumer.internals.AbstractCoordinator][Consumer clientId=test, groupId=test] Discovered group coordinator 10.58.10.103:9192 (id: 2147483645 rack: null)
+  [INFO] [2019-02-28 09:27:18][org.apache.kafka.clients.consumer.internals.ConsumerCoordinator][Consumer clientId=test, groupId=test] Revoking previously assigned partitions []
+  [INFO] [2019-02-28 09:27:18][org.apache.kafka.clients.consumer.internals.AbstractCoordinator][Consumer clientId=test, groupId=test] (Re-)joining group
+  [INFO] [2019-02-28 09:27:18][org.apache.kafka.clients.consumer.internals.AbstractCoordinator][Consumer clientId=test, groupId=test] Successfully joined group with generation 1
+  [INFO] [2019-02-28 09:27:18][org.apache.kafka.clients.consumer.internals.ConsumerCoordinator][Consumer clientId=test, groupId=test] Setting newly assigned partitions [education-info-0, education-info-1]
+  [INFO] [2019-02-28 09:27:18][org.apache.kafka.clients.consumer.internals.Fetcher][Consumer clientId=test, groupId=test] Resetting offset for partition education-info-0 to offset 25.
+  [INFO] [2019-02-28 09:27:18][org.apache.kafka.clients.consumer.internals.Fetcher][Consumer clientId=test, groupId=test] Resetting offset for partition education-info-1 to offset 26.
+  [INFO] [2019-02-28 09:27:43][org.apache.kafka.clients.producer.ProducerConfig]ProducerConfig values: 
+	acks = 0
+	batch.size = 16384
+	bootstrap.servers = [10.58.10.103:9192]
+	buffer.memory = 33554432
+	client.id = 
+	compression.type = none
+	connections.max.idle.ms = 540000
+	enable.idempotence = false
+	interceptor.classes = []
+	key.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	linger.ms = 0
+	max.block.ms = 60000
+	max.in.flight.requests.per.connection = 5
+	max.request.size = 1048576
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partitioner.class = class org.apache.kafka.clients.producer.internals.DefaultPartitioner
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 0
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.timeout.ms = 60000
+	transactional.id = null
+	value.serializer = class org.apache.kafka.common.serialization.StringSerializer
+
+  [INFO] [2019-02-28 09:27:43][org.apache.kafka.common.utils.AppInfoParser]Kafka version : 2.0.0
+  [INFO] [2019-02-28 09:27:43][org.apache.kafka.common.utils.AppInfoParser]Kafka commitId : 3402a8361b734732
+  [INFO] [2019-02-28 09:27:43][org.apache.kafka.clients.Metadata]Cluster ID: GMjhXE3BRBuWxX3HEAGq_w
+  [INFO] [2019-02-28 09:27:43][org.apache.kafka.clients.producer.KafkaProducer][Producer clientId=producer-1] Closing the Kafka producer with timeoutMillis = 9223372036854775807 ms.
   

@@ -13,7 +13,8 @@ public class Consumer {
 
 	private static final String TOPIC="education-info";
 	// 192.168.6.55:9092,192.168.6.56:9092,192.168.6.57:9092
-    private static final String BROKER_LIST="10.57.17.77:9192,10.58.10.103:9192";
+    private static final String BROKER_LIST="10.58.10.103:9192";
+//    private static final String BROKER_LIST="10.57.17.77:9192,10.58.10.103:9192";
     private static KafkaConsumer<String,String> kafkaConsumer = null;
  
     static {

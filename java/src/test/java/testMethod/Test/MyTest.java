@@ -5,8 +5,11 @@ import org.junit.Test;
 public class MyTest {
 
 	public static void main(String[] args) {
-		
-	}
+		String s2=new String("abc");
+        String s1="abc";
+        String s3="abc";
+        System.out.println(s3==s1);
+}
 	
 	@Test
 	public void testBinary() {

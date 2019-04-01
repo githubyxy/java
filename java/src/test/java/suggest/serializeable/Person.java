@@ -12,7 +12,7 @@ import java.io.Serializable;
  */
 public class Person implements Serializable{	
 	private static final long serialVersionUID = 91282334L;
-	public  final String name = "常量";
+	public  String name = "常量";
 //	public  final String name=initName();	
 //	public String initName(){
 //		return "方法";
