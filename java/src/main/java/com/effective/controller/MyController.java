@@ -4,29 +4,31 @@ import javax.annotation.Resource;
 import javax.servlet.http.HttpServletRequest;
 
 import org.springframework.stereotype.Controller;
-import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
-import com.effective.dao.po.Customer;
-import com.effective.service.IMyService;
+import com.effective.service.transaction.IKvService;
+import com.effective.service.transaction.KvTestServiceImpl;
 
 @Controller
 @RequestMapping(value = "/")
 public class MyController {
 
 	@Resource
-	private IMyService myService;
+	private IKvService kvService;
+	@Resource
+	private KvTestServiceImpl kvTestServiceImpl;
 	
-	@RequestMapping(value = "/test" ,method = RequestMethod.GET)
+	@RequestMapping(value = "/kvInsert" ,method = RequestMethod.GET)
+	public String kvInsert(HttpServletRequest request){
+		kvTestServiceImpl.insert();
+		return "kv";
+	}
+	
+	@RequestMapping(value = "/gotoKv" ,method = RequestMethod.GET)
 	public String gotoPage(HttpServletRequest request){
-		return "index";
+		kvService.insert();
+		return "kv";
 	}
 	
-	@RequestMapping(value = "/getCustomer" ,method = RequestMethod.GET)
-	public String getCustomer(Model model){
-		Customer customer = myService.getCustomer();
-		model.addAttribute("customer", customer);
-		return "index";
-	}
 }

@@ -36,7 +36,7 @@ public class Generator {
 				myBatisGenerator.generate(null);
 				System.out.println("Success");
 			} else
-				System.out.println("沒有找到配置文件");// 配置文件中的项目地址和包引用地址要用绝对地址，否则不能生�?
+				System.out.println("沒有找到配置文件");// 配置文件中的项目地址和包引用地址要用绝对地址，否则不能生�?
 		} catch (Exception e) {
 			e.printStackTrace();
 		}

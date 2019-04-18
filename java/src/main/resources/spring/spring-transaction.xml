@@ -43,10 +43,9 @@
 		<aop:pointcut expression="execution(* com.effective.service.transaction..*.*(..))" id="txPointcut"/>
 		<aop:advisor advice-ref="repeatedReadTxAdvice-REQUIRED" pointcut-ref="txPointcut"/>
 	</aop:config>
-	<aop:config>
-		<aop:pointcut expression="execution(* com.effective.dao.mapper.*.*(..))" id="txPointcut2"/>
-		<aop:advisor advice-ref="readCommitedTxAdvice-REQUIRES_NEW" pointcut-ref="txPointcut2"/>
-	</aop:config>
-
+	<!-- <aop:config>
+		<aop:pointcut expression="execution(* com.effective.dao..*.*(..))" id="txPointcut3"/>
+		<aop:advisor advice-ref="repeatedReadTxAdvice-REQUIRED" pointcut-ref="txPointcut3"/>
+	</aop:config> -->
 
 </beans>
