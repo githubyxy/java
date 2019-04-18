@@ -1,7 +1,14 @@
 package com.effective.service.transaction;
 
+import java.sql.Connection;
+import java.sql.SQLException;
+
 import javax.annotation.Resource;
 
+import org.apache.ibatis.session.SqlSession;
+import org.apache.ibatis.session.defaults.DefaultSqlSessionFactory;
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.FileSystemXmlApplicationContext;
 import org.springframework.stereotype.Service;
 
 import com.effective.dao.mapper.gen.KvMapper;
@@ -21,6 +28,33 @@ public class KvServiceImpl implements IKvService {
 		
 		int a = 0;
 		int i = 1/a;
+	}
+
+	@Override
+	public void insert2() {
+		ApplicationContext context = new FileSystemXmlApplicationContext("classpath:spring/spring-mybatis.xml");
+//		SqlSessionFactoryBean sqlSessionFactory = (SqlSessionFactoryBean) context.getBean("sqlSessionFactory");
+		DefaultSqlSessionFactory sqlSessionFactory = (DefaultSqlSessionFactory) context.getBean("sqlSessionFactory");
+		
+//		SqlSessionFactory sessionFactory = sqlSessionFactory.getObject();
+		
+		SqlSession openSession = sqlSessionFactory.openSession();
+		Connection connection = openSession.getConnection();
+		try {
+			System.out.println(connection.getAutoCommit());
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+//		connection.setAutoCommit(false);
+		
+		Kv kv = new Kv();
+		kv.setK("yxy");
+		openSession.insert("com.effective.dao.mapper.gen.KvMapper.insertSelective", kv);
+		
+		int a = 0;
+		int i = 1/a;
+		
 	}
 
 }

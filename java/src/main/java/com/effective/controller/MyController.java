@@ -30,5 +30,12 @@ public class MyController {
 		kvService.insert();
 		return "kv";
 	}
+	@RequestMapping(value = "/session/op" ,method = RequestMethod.GET)
+	public String op(HttpServletRequest request) throws Exception{
+		
+		kvService.insert2();
+		
+		return "kv";
+	}
 	
 }
