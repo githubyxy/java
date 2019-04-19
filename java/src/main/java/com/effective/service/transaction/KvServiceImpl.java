@@ -10,6 +10,7 @@ import org.apache.ibatis.session.defaults.DefaultSqlSessionFactory;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.FileSystemXmlApplicationContext;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.interceptor.TransactionAspectSupport;
 
 import com.effective.dao.mapper.gen.KvMapper;
 import com.effective.dao.po.Kv;
@@ -25,9 +26,14 @@ public class KvServiceImpl implements IKvService {
 		Kv kv = new Kv();
 		kv.setK("yxy");
 		kvMapper.insertSelective(kv);
+		try {
+			int a = 0;
+			int i = 1/a;
+		} catch (Exception e) {
+			System.out.println("手动回滚事务");
+			TransactionAspectSupport.currentTransactionStatus().setRollbackOnly();
+		}
 		
-		int a = 0;
-		int i = 1/a;
 	}
 
 	@Override
