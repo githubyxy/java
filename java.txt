@@ -1,1 +1,2 @@
+第一次提交：git remote add origin git@github.com:githubyxy/java.git
 git push origin master
