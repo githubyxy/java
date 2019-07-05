@@ -2,7 +2,9 @@ package com.effective.dao.mapper.gen;
 
 import com.effective.dao.po.Kv;
 import com.effective.dao.po.KvExample;
+
 import java.util.List;
+
 import org.apache.ibatis.annotations.Param;
 
 public interface KvMapper {

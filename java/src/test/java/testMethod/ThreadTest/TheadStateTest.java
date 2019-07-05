@@ -3,29 +3,29 @@ package testMethod.ThreadTest;
 import org.junit.Test;
 
 public class TheadStateTest {
-	
-	public static void main(String[] args) {
+
+    public static void main(String[] args) {
 		/*synchronized (args) {
 			
 		}*/
-	}
-	
-	
-	@Test
-	public void testThread2() {
-		MyThread2 t2 = new MyThread2();
-		Thread thread = new Thread(t2);
-		thread.start();
-		try {
-			thread.join(7 * 1000);
-		} catch (InterruptedException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-		System.out.println(Thread.currentThread().getName());
-	}
-	
-	public static void testMyThread(String[] args) {
+    }
+
+
+    @Test
+    public void testThread2() {
+        MyThread2 t2 = new MyThread2();
+        Thread thread = new Thread(t2);
+        thread.start();
+        try {
+            thread.join(7 * 1000);
+        } catch (InterruptedException e) {
+            // TODO Auto-generated catch block
+            e.printStackTrace();
+        }
+        System.out.println(Thread.currentThread().getName());
+    }
+
+    public static void testMyThread(String[] args) {
 		/*虚拟机中的线程状态有六种，定义在Thread.State中：
 
 		1、新建状态NEW
@@ -51,23 +51,23 @@ public class TheadStateTest {
 		6、终止状态TERMINATED
 
 		线程调用终止或者run()方法执行结束后，线程即处于终止状态。处于终止状态的线程不具备继续运行的能力*/
-		
-		// 测试2 interrupt() join()
-		Thread t1 = new Thread(new MyThread("线程1"));
-		
-		t1.start();
-		try {
-			System.out.println(t1.isAlive());  // true
-			t1.join();
-			System.out.println(t1.isAlive());  // false
-		} catch (InterruptedException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-		new Thread(new MyThread("线程2")).start();
-		
-		
-		// 测试1  wait() notify() notifyAll() 
+
+        // 测试2 interrupt() join()
+        Thread t1 = new Thread(new MyThread("线程1"));
+
+        t1.start();
+        try {
+            System.out.println(t1.isAlive());  // true
+            t1.join();
+            System.out.println(t1.isAlive());  // false
+        } catch (InterruptedException e) {
+            // TODO Auto-generated catch block
+            e.printStackTrace();
+        }
+        new Thread(new MyThread("线程2")).start();
+
+
+        // 测试1  wait() notify() notifyAll()
 		/*new Thread(new MyThread("wait1")).start();
 		new Thread(new MyThread("wait2")).start();
 		new Thread(new MyThread("wait3")).start();
@@ -78,5 +78,5 @@ public class TheadStateTest {
 			e.printStackTrace();
 		}
 		new Thread(new MyThread("notify")).start();*/
-	}
+    }
 }

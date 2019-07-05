@@ -29,20 +29,20 @@ public class NettyNioServer {
         try {
             ServerBootstrap b = new ServerBootstrap();
             b.group(new NioEventLoopGroup(), new NioEventLoopGroup())
-             .channel(NioServerSocketChannel.class)
-             .localAddress(new InetSocketAddress(port))
-             .childHandler(new ChannelInitializer<SocketChannel>() {
-                 @Override
-                 public void initChannel(SocketChannel ch) 
-                     throws Exception {
-                     ch.pipeline().addLast(new ChannelInboundHandlerAdapter() {
-                         @Override
-                         public void channelActive(ChannelHandlerContext ctx) throws Exception {
-                             ctx.writeAndFlush(buf.duplicate()).addListener(ChannelFutureListener.CLOSE);
-                         }
-                     });
-                 }
-             });
+                    .channel(NioServerSocketChannel.class)
+                    .localAddress(new InetSocketAddress(port))
+                    .childHandler(new ChannelInitializer<SocketChannel>() {
+                        @Override
+                        public void initChannel(SocketChannel ch)
+                                throws Exception {
+                            ch.pipeline().addLast(new ChannelInboundHandlerAdapter() {
+                                @Override
+                                public void channelActive(ChannelHandlerContext ctx) throws Exception {
+                                    ctx.writeAndFlush(buf.duplicate()).addListener(ChannelFutureListener.CLOSE);
+                                }
+                            });
+                        }
+                    });
             ChannelFuture f = b.bind().sync();
             f.channel().closeFuture().sync();
         } finally {

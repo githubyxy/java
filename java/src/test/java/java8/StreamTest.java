@@ -6,7 +6,7 @@ import java.util.stream.Stream;
 
 public class StreamTest {
 
-	public static void main(String[] args) {
+    public static void main(String[] args) {
 //		List<String> list = new ArrayList<>();
 //		for (int i = 1; i < 101; i++) {
 //			list.add(i+"");
@@ -30,6 +30,6 @@ public class StreamTest {
 //		});
 //		
 //		stream.forEach(o -> {System.out.println(o);});
-		
-	}
+
+    }
 }

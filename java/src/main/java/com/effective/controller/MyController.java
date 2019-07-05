@@ -14,28 +14,34 @@ import com.effective.service.transaction.KvTestServiceImpl;
 @RequestMapping(value = "/")
 public class MyController {
 
-	@Resource
-	private IKvService kvService;
-	@Resource
-	private KvTestServiceImpl kvTestServiceImpl;
-	
-	@RequestMapping(value = "/kvInsert" ,method = RequestMethod.GET)
-	public String kvInsert(HttpServletRequest request){
-		kvTestServiceImpl.insert();
-		return "kv";
-	}
-	
-	@RequestMapping(value = "/gotoKv" ,method = RequestMethod.GET)
-	public String gotoPage(HttpServletRequest request){
-		kvService.insert();
-		return "kv";
-	}
-	@RequestMapping(value = "/session/op" ,method = RequestMethod.GET)
-	public String op(HttpServletRequest request) throws Exception{
-		
-		kvService.insert2();
-		
-		return "kv";
-	}
-	
+    @Resource
+    private IKvService kvService;
+    @Resource
+    private KvTestServiceImpl kvTestServiceImpl;
+
+    @RequestMapping(value = "imagePage")
+    public String gotoPage(){
+        return "image";
+    }
+    
+    @RequestMapping(value = "/kvInsert", method = RequestMethod.GET)
+    public String kvInsert(HttpServletRequest request) {
+        kvTestServiceImpl.insert();
+        return "kv";
+    }
+
+    @RequestMapping(value = "/gotoKv", method = RequestMethod.GET)
+    public String gotoPage(HttpServletRequest request) {
+        kvService.insert();
+        return "kv";
+    }
+
+    @RequestMapping(value = "/session/op", method = RequestMethod.GET)
+    public String op(HttpServletRequest request) throws Exception {
+
+        kvService.insert2();
+
+        return "kv";
+    }
+
 }

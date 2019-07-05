@@ -2,18 +2,16 @@ package designpattern.singleton;
 
 public enum SingletonEnum {
 
-	INSTANCE;
-    
+    INSTANCE;
+
     private Singleton instance;
-    
-    SingletonEnum()
-    {
+
+    SingletonEnum() {
         instance = Singleton.getInstance();
     }
-    
-    public Singleton getInstance()
-    {
+
+    public Singleton getInstance() {
         return instance;
     }
-    
+
 }

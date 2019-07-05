@@ -13,23 +13,23 @@ import org.apache.poi.xwpf.extractor.XWPFWordExtractor;
 import org.apache.poi.xwpf.usermodel.XWPFDocument;
 
 public class MyWordTest {
-	
-	public static void main(String[] args) throws IOException {
-		ByteArrayOutputStream outputStream = new ByteArrayOutputStream();
-		try {
-			
-			HWPFDocument doc = new HWPFDocument(new FileInputStream(new File("D:\\java\\1.doc")));
-			Map<String,String> paramMap = new HashMap<>();
-			Range range = doc.getOverallRange();
-			for (Map.Entry<String, String> entry : paramMap.entrySet()) {
-				range.replaceText(entry.getKey(), entry.getValue());
-			}
-			doc.write(outputStream);
-			
-		} catch (IOException e) {
-			e.printStackTrace();
-		}
-		
+
+    public static void main(String[] args) throws IOException {
+        ByteArrayOutputStream outputStream = new ByteArrayOutputStream();
+        try {
+
+            HWPFDocument doc = new HWPFDocument(new FileInputStream(new File("D:\\java\\1.doc")));
+            Map<String, String> paramMap = new HashMap<>();
+            Range range = doc.getOverallRange();
+            for (Map.Entry<String, String> entry : paramMap.entrySet()) {
+                range.replaceText(entry.getKey(), entry.getValue());
+            }
+            doc.write(outputStream);
+
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
 //		readAndWriterTest4();
 		
 		 /*File file = new File("D:\\java\\1.doc");
@@ -48,9 +48,9 @@ public class MyWordTest {
 	        } catch (Exception e) {
 	            e.printStackTrace();
 	        }*/
-	}
+    }
 
-	public static void readAndWriterTest3() throws IOException {
+    public static void readAndWriterTest3() throws IOException {
         File file = new File("D:\\java\\1.doc");
         String str = "";
         try {
@@ -68,9 +68,9 @@ public class MyWordTest {
             e.printStackTrace();
         }
     }
-	
-	
-	public static void readAndWriterTest4() throws IOException {
+
+
+    public static void readAndWriterTest4() throws IOException {
         File file = new File("D:\\java\\3.docx");
         String str = "";
         try {
