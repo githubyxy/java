@@ -27,10 +27,10 @@ import org.junit.Test;
 
 public class GenerateExcel2 {
 
-    private String[] titles = new String[]{"客户姓名", "客户手机号"};
+    private String[] titles = new String[]{"客户姓名", "客户手机号", "客户身份证号码","客户生日"};
     private int contentSize = 200000;
-    private String[] contents = new String[]{"李艺", "11111"};
-    private String fileName = "/tmp/b.xlsx";
+    private String[] contents = new String[]{"李艺", "11111111111", "37142619901","1990-10-10"};
+    private String fileName = "/tmp/a.xlsx";
 
     @Test
     public void test() throws FileNotFoundException, IOException {
@@ -55,7 +55,7 @@ public class GenerateExcel2 {
 
             for (int j = 0; j < contents.length; j++) {
                 Cell cell = row.createCell(j);
-                cell.setCellValue(contents[j] + (j == 1 ? perfix : ""));
+                cell.setCellValue(contents[j] + (j == 2 ? perfix : ""));
             }
         }
         System.err.println("time=" + System.currentTimeMillis());

@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<permissions version="10056">
+
+	<module>
+        <button name="执行窗口" key="window" url="/route/window" sort="10" isMenu="1" icon="iconzhihangchuangkou">
+            <button name="时间窗口恢复默认" key="restore_default" sort="10">
+            </button>
+            <button name="时间窗口编辑" key="update_window" sort="20">
+            </button>
+        </button>
+        <button name="任务设置" key="task" url="/route/task" sort="20" isMenu="1" icon="iconzhihangchuangkou">
+            <button name="新建任务" key="create_task" sort="10"></button>
+            <button name="策略配置" key="strategy_configuration" sort="20">
+                <perm name="模式调整开关" key="call_mode" sort="10"/>
+                <perm name="保存按钮" key="strategy_save" sort="20"/>
+            </button>
+            <button name="批量录入" key="batch_upload" sort="30">
+                <perm name="数据模板" key="download_template" sort="10"/>
+                <perm name="确认上传" key="excel_upload" sort="20"/>
+            </button>
+        </button>
+        <button name="数据列表" key="dataList" url="/route/dataList" sort="30" isMenu="1" icon="iconshujuliebiao">
+            <perm name="数据下载" key="download_batch_data" />
+            <perm name="查看配置" key="query_strategy"/>
+            <perm name="任务暂停/启动" key="operate_run_status"/>
+            <perm name="任务中止" key="halted_run_status"/>
+        </button>
+        <button name="交互详情" key="interaction" url="/route/interaction" sort="40" isMenu="1" icon="iconjiaohuxiangqing">
+            <perm name="批量导出" key="export_interaction" />
+            <perm name="记录查看" key="view_details" />
+        </button>
+        <button name="服务报告" key="serviceReport" url="/route/serviceReport" sort="50" isMenu="1" icon="iconfuwubaogao">
+            <perm name="报告下载" key="report_download"></perm>
+            <perm name="录音文件下载" key="voice_file_download"></perm>
+        </button>
+        <button name="AI话术管理" key="talk" url="" sort="70" isMenu="1" icon="iconhuashuguanli">
+            <perm name="新增话术" key="add_ai_template"></perm>
+            <perm name="启用话术" key="ai_status"></perm>
+            <perm name="编辑话术" key="update_ai_template"></perm>
+            <perm name="删除话术" key="delete_ai_template"></perm>
+        </button>
+        <button name="变量管理" key="variables" url="/route/talk/variables" sort="80" isMenu="1" icon="iconbianliangguanli">
+            <perm name="新增变量" key="add_variables"></perm>
+            <perm name="启用变量" key="variables_status"></perm>
+            <perm name="编辑变量" key="update_variables"></perm>
+            <perm name="删除变量" key="delete_variables"></perm>
+        </button>
+        <button name="自动化结果管理" key="autoResult" url="/route/talk/autoResult" sort="90" isMenu="1" icon="iconzidonghuajieguoguanli">
+            <perm name="新建场景" key="add_scene"></perm>
+            <perm name="添加自动化结果" key="add_tag"></perm>
+            <perm name="编辑自动化结果" key="update_tag"></perm>
+            <perm name="删除自动化结果" key="delete_tag"></perm>
+        </button>
+        <button name="系统管理" key="system" sort=""  isMenu="1" icon="iconxitongguanli">
+            <button name="客户接入管理" key="access">
+                <button name="IVR话术配置按钮" key="ivr_config">
+                    <perm name="添加IVR话术" key="add_ivr"></perm>
+                    <perm name="查看IVR话术" key="query_ivr"></perm>
+                    <perm name="编辑IVR话术" key="modify_ivr"></perm>
+                    <perm name="删除IVR话术" key="delete_ivr"></perm>
+                </button>
+                <button name="AI话术配置按钮" key="ai_config">
+                    <perm name="添加AI话术" key="add_ai"></perm>
+                    <perm name="查看AI话术" key="query_ai"></perm>
+                    <perm name="编辑AI话术" key="modify_ai"></perm>
+                    <perm name="删除AI话术" key="delete_ai"></perm>
+                </button>
+                <button name="短信配置按钮" key="sms_config">
+                    <perm name="新建短信" key="add_sms"></perm>
+                    <perm name="查看短信" key="query_sms"></perm>
+                    <perm name="编辑短信" key="modify_sms"></perm>
+                    <perm name="删除短信" key="delete_sms"></perm>
+                </button>
+                <button name="信息安全配置按钮" key="safe_config">
+                    <perm name="交互详情-批量导出开关" key="batch_export"></perm>
+                    <perm name="服务报告-导出报告开关" key="report_export"></perm>
+                    <perm name="数据列表-数据导出开关" key="data_export"></perm>
+                </button>
+                <button name="删除" key="delete_access"></button>
+            </button>
+            <button name="客户权限管理" key="authority">
+                <button name="客户管理" key="customer_manager">
+                    <perm name="新增账号" key="add_customer_account"></perm>
+                    <perm name="状态禁用" key="status_disabled"></perm>
+                    <perm name="用户权限管理" key="customer_privilege"></perm>
+                    <perm name="应用修改" key="update_application"></perm>
+                </button>
+                <button name="角色管理" key="role_manager">
+                    <perm name="新建客户角色" key="add_role_privilege"></perm>
+                    <perm name="编辑客户角色" key="edit_role_privilege"></perm>
+                </button>
+            </button>
+            <button name="运营管理" key="operations">
+                <button name="合作方管理" key="partner_manager">
+                    <perm name="新建合作方" key="add_partner"></perm>
+                </button>
+                <button name="应用管理" key="application_manager">
+                    <perm name="新建应用" key="add_application"></perm>
+                </button>
+                <button name="运营用户管理" key="oper_user_manager">
+                    <perm name="新建运营人员" key="add_oper_user"></perm>
+                    <perm name="编辑运营人员" key="update_oper_user"></perm>
+                    <perm name="合作方分配" key="assign_partner_manager">
+                        <perm name="取消管理" key="unassign_partner" ></perm>
+                        <perm name="添加管理" key="assign_partner" ></perm>
+                    </perm>
+                </button>
+                <button name="角色管理" key="oper_role_manager">
+                    <perm name="新建运营角色" key="add_oper_role"></perm>
+                    <perm name="编辑运营角色" key="update_oper_role"></perm>
+                </button>
+            </button>
+        </button>
+    </module>
+
+</permissions>

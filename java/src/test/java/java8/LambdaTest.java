@@ -22,5 +22,9 @@ public class LambdaTest {
         MyFunction myFunction = new MyFunction();
         String apply = myFunction.apply(list);
         System.out.println(apply);
+        
+        
+        new MyCustomer().accept(list);
+        System.err.println(list.size());
     }
 }

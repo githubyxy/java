@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.effective.dao.mapper.gen.PrivilegeDOMapper" >
+  <resultMap id="BaseResultMap" type="com.effective.dao.po.PrivilegeDO" >
+    <id column="id" property="id" jdbcType="BIGINT" />
+    <result column="privilege_uuid" property="privilegeUuid" jdbcType="VARCHAR" />
+    <result column="privilege_name" property="privilegeName" jdbcType="VARCHAR" />
+    <result column="privilege_sort" property="privilegeSort" jdbcType="INTEGER" />
+    <result column="parent_privilege_uuid" property="parentPrivilegeUuid" jdbcType="VARCHAR" />
+    <result column="is_menu" property="isMenu" jdbcType="BIT" />
+    <result column="route" property="route" jdbcType="VARCHAR" />
+    <result column="icon" property="icon" jdbcType="VARCHAR" />
+    <result column="gmt_create" property="gmtCreate" jdbcType="TIMESTAMP" />
+    <result column="gmt_modify" property="gmtModify" jdbcType="TIMESTAMP" />
+  </resultMap>
+  <sql id="Example_Where_Clause" >
+    <where >
+      <foreach collection="oredCriteria" item="criteria" separator="or" >
+        <if test="criteria.valid" >
+          <trim prefix="(" suffix=")" prefixOverrides="and" >
+            <foreach collection="criteria.criteria" item="criterion" >
+              <choose >
+                <when test="criterion.noValue" >
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue" >
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue" >
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue" >
+                  and ${criterion.condition}
+                  <foreach collection="criterion.value" item="listItem" open="(" close=")" separator="," >
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Update_By_Example_Where_Clause" >
+    <where >
+      <foreach collection="example.oredCriteria" item="criteria" separator="or" >
+        <if test="criteria.valid" >
+          <trim prefix="(" suffix=")" prefixOverrides="and" >
+            <foreach collection="criteria.criteria" item="criterion" >
+              <choose >
+                <when test="criterion.noValue" >
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue" >
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue" >
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue" >
+                  and ${criterion.condition}
+                  <foreach collection="criterion.value" item="listItem" open="(" close=")" separator="," >
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Base_Column_List" >
+    id, privilege_uuid, privilege_name, privilege_sort, parent_privilege_uuid, is_menu, 
+    route, icon, gmt_create, gmt_modify
+  </sql>
+  <select id="selectByExample" resultMap="BaseResultMap" parameterType="com.effective.dao.po.PrivilegeDOExample" >
+    select
+    <if test="distinct" >
+      distinct
+    </if>
+    <include refid="Base_Column_List" />
+    from privilege
+    <if test="_parameter != null" >
+      <include refid="Example_Where_Clause" />
+    </if>
+    <if test="orderByClause != null" >
+      order by ${orderByClause}
+      <if test="limitStart >= 0" >
+        limit ${limitStart} , ${limitEnd}
+      </if>
+    </if>
+  </select>
+  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Long" >
+    select 
+    <include refid="Base_Column_List" />
+    from privilege
+    where id = #{id,jdbcType=BIGINT}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Long" >
+    delete from privilege
+    where id = #{id,jdbcType=BIGINT}
+  </delete>
+  <delete id="deleteByExample" parameterType="com.effective.dao.po.PrivilegeDOExample" >
+    delete from privilege
+    <if test="_parameter != null" >
+      <include refid="Example_Where_Clause" />
+    </if>
+  </delete>
+  <insert id="insert" parameterType="com.effective.dao.po.PrivilegeDO" >
+    insert into privilege (id, privilege_uuid, privilege_name, 
+      privilege_sort, parent_privilege_uuid, is_menu, 
+      route, icon, gmt_create, 
+      gmt_modify)
+    values (#{id,jdbcType=BIGINT}, #{privilegeUuid,jdbcType=VARCHAR}, #{privilegeName,jdbcType=VARCHAR}, 
+      #{privilegeSort,jdbcType=INTEGER}, #{parentPrivilegeUuid,jdbcType=VARCHAR}, #{isMenu,jdbcType=BIT}, 
+      #{route,jdbcType=VARCHAR}, #{icon,jdbcType=VARCHAR}, #{gmtCreate,jdbcType=TIMESTAMP}, 
+      #{gmtModify,jdbcType=TIMESTAMP})
+  </insert>
+  <insert id="insertSelective" parameterType="com.effective.dao.po.PrivilegeDO" >
+    insert into privilege
+    <trim prefix="(" suffix=")" suffixOverrides="," >
+      <if test="id != null" >
+        id,
+      </if>
+      <if test="privilegeUuid != null" >
+        privilege_uuid,
+      </if>
+      <if test="privilegeName != null" >
+        privilege_name,
+      </if>
+      <if test="privilegeSort != null" >
+        privilege_sort,
+      </if>
+      <if test="parentPrivilegeUuid != null" >
+        parent_privilege_uuid,
+      </if>
+      <if test="isMenu != null" >
+        is_menu,
+      </if>
+      <if test="route != null" >
+        route,
+      </if>
+      <if test="icon != null" >
+        icon,
+      </if>
+      <if test="gmtCreate != null" >
+        gmt_create,
+      </if>
+      <if test="gmtModify != null" >
+        gmt_modify,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides="," >
+      <if test="id != null" >
+        #{id,jdbcType=BIGINT},
+      </if>
+      <if test="privilegeUuid != null" >
+        #{privilegeUuid,jdbcType=VARCHAR},
+      </if>
+      <if test="privilegeName != null" >
+        #{privilegeName,jdbcType=VARCHAR},
+      </if>
+      <if test="privilegeSort != null" >
+        #{privilegeSort,jdbcType=INTEGER},
+      </if>
+      <if test="parentPrivilegeUuid != null" >
+        #{parentPrivilegeUuid,jdbcType=VARCHAR},
+      </if>
+      <if test="isMenu != null" >
+        #{isMenu,jdbcType=BIT},
+      </if>
+      <if test="route != null" >
+        #{route,jdbcType=VARCHAR},
+      </if>
+      <if test="icon != null" >
+        #{icon,jdbcType=VARCHAR},
+      </if>
+      <if test="gmtCreate != null" >
+        #{gmtCreate,jdbcType=TIMESTAMP},
+      </if>
+      <if test="gmtModify != null" >
+        #{gmtModify,jdbcType=TIMESTAMP},
+      </if>
+    </trim>
+  </insert>
+  <select id="countByExample" parameterType="com.effective.dao.po.PrivilegeDOExample" resultType="java.lang.Integer" >
+    select count(*) from privilege
+    <if test="_parameter != null" >
+      <include refid="Example_Where_Clause" />
+    </if>
+  </select>
+  <update id="updateByExampleSelective" parameterType="map" >
+    update privilege
+    <set >
+      <if test="record.id != null" >
+        id = #{record.id,jdbcType=BIGINT},
+      </if>
+      <if test="record.privilegeUuid != null" >
+        privilege_uuid = #{record.privilegeUuid,jdbcType=VARCHAR},
+      </if>
+      <if test="record.privilegeName != null" >
+        privilege_name = #{record.privilegeName,jdbcType=VARCHAR},
+      </if>
+      <if test="record.privilegeSort != null" >
+        privilege_sort = #{record.privilegeSort,jdbcType=INTEGER},
+      </if>
+      <if test="record.parentPrivilegeUuid != null" >
+        parent_privilege_uuid = #{record.parentPrivilegeUuid,jdbcType=VARCHAR},
+      </if>
+      <if test="record.isMenu != null" >
+        is_menu = #{record.isMenu,jdbcType=BIT},
+      </if>
+      <if test="record.route != null" >
+        route = #{record.route,jdbcType=VARCHAR},
+      </if>
+      <if test="record.icon != null" >
+        icon = #{record.icon,jdbcType=VARCHAR},
+      </if>
+      <if test="record.gmtCreate != null" >
+        gmt_create = #{record.gmtCreate,jdbcType=TIMESTAMP},
+      </if>
+      <if test="record.gmtModify != null" >
+        gmt_modify = #{record.gmtModify,jdbcType=TIMESTAMP},
+      </if>
+    </set>
+    <if test="_parameter != null" >
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByExample" parameterType="map" >
+    update privilege
+    set id = #{record.id,jdbcType=BIGINT},
+      privilege_uuid = #{record.privilegeUuid,jdbcType=VARCHAR},
+      privilege_name = #{record.privilegeName,jdbcType=VARCHAR},
+      privilege_sort = #{record.privilegeSort,jdbcType=INTEGER},
+      parent_privilege_uuid = #{record.parentPrivilegeUuid,jdbcType=VARCHAR},
+      is_menu = #{record.isMenu,jdbcType=BIT},
+      route = #{record.route,jdbcType=VARCHAR},
+      icon = #{record.icon,jdbcType=VARCHAR},
+      gmt_create = #{record.gmtCreate,jdbcType=TIMESTAMP},
+      gmt_modify = #{record.gmtModify,jdbcType=TIMESTAMP}
+    <if test="_parameter != null" >
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByPrimaryKeySelective" parameterType="com.effective.dao.po.PrivilegeDO" >
+    update privilege
+    <set >
+      <if test="privilegeUuid != null" >
+        privilege_uuid = #{privilegeUuid,jdbcType=VARCHAR},
+      </if>
+      <if test="privilegeName != null" >
+        privilege_name = #{privilegeName,jdbcType=VARCHAR},
+      </if>
+      <if test="privilegeSort != null" >
+        privilege_sort = #{privilegeSort,jdbcType=INTEGER},
+      </if>
+      <if test="parentPrivilegeUuid != null" >
+        parent_privilege_uuid = #{parentPrivilegeUuid,jdbcType=VARCHAR},
+      </if>
+      <if test="isMenu != null" >
+        is_menu = #{isMenu,jdbcType=BIT},
+      </if>
+      <if test="route != null" >
+        route = #{route,jdbcType=VARCHAR},
+      </if>
+      <if test="icon != null" >
+        icon = #{icon,jdbcType=VARCHAR},
+      </if>
+      <if test="gmtCreate != null" >
+        gmt_create = #{gmtCreate,jdbcType=TIMESTAMP},
+      </if>
+      <if test="gmtModify != null" >
+        gmt_modify = #{gmtModify,jdbcType=TIMESTAMP},
+      </if>
+    </set>
+    where id = #{id,jdbcType=BIGINT}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.effective.dao.po.PrivilegeDO" >
+    update privilege
+    set privilege_uuid = #{privilegeUuid,jdbcType=VARCHAR},
+      privilege_name = #{privilegeName,jdbcType=VARCHAR},
+      privilege_sort = #{privilegeSort,jdbcType=INTEGER},
+      parent_privilege_uuid = #{parentPrivilegeUuid,jdbcType=VARCHAR},
+      is_menu = #{isMenu,jdbcType=BIT},
+      route = #{route,jdbcType=VARCHAR},
+      icon = #{icon,jdbcType=VARCHAR},
+      gmt_create = #{gmtCreate,jdbcType=TIMESTAMP},
+      gmt_modify = #{gmtModify,jdbcType=TIMESTAMP}
+    where id = #{id,jdbcType=BIGINT}
+  </update>
+  <select id="lockByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Long" >
+    select 
+    <include refid="Base_Column_List" />
+    from privilege
+    where id = #{id,jdbcType=BIGINT}  for update 
+  </select>
+  <select id="lockByExample" resultMap="BaseResultMap" parameterType="com.effective.dao.po.PrivilegeDOExample" >
+    select 
+    <if test="distinct" >
+      distinct
+    </if>
+    <include refid="Base_Column_List" />
+    from privilege
+    <if test="_parameter != null" >
+      <include refid="Example_Where_Clause" />
+    </if>
+    <if test="orderByClause != null" >
+       order by #{orderByClause} 
+    </if>
+    <if test="limitStart >= 0" >
+       limit #{limitStart} , #{limitEnd} 
+    </if>
+     for update 
+  </select>
+</mapper>

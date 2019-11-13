@@ -24,7 +24,7 @@
 
         <!-- 数据库链接 -->
         <jdbcConnection driverClass="com.mysql.jdbc.Driver"
-                        connectionURL="jdbc:mysql://192.168.6.70:3306/collection" userId="sm_work"
+                        connectionURL="jdbc:mysql://192.168.6.70:3306/test_3" userId="sm_work"
                         password="zg8n8cF0yy9nmM7eENoR"/>
 
         <javaTypeResolver>
@@ -54,7 +54,8 @@
         <!-- 表以及关系配置 -->
         <!-- <table tableName="user" domainObjectName="User" /> -->
         <!-- <table tableName="customer" domainObjectName="Customer" /> -->
-        <table tableName="kv" domainObjectName="Kv"/>
+        <!-- <table tableName="kv" domainObjectName="Kv"/> -->
+        <table tableName="privilege" domainObjectName="PrivilegeDO"/>
 
     </context>
 </generatorConfiguration>
