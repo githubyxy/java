@@ -224,7 +224,7 @@
         <dependency>
             <groupId>com.rabbitmq</groupId>
             <artifactId>amqp-client</artifactId>
-            <version>3.5.6</version>
+            <version>5.7.3</version>
         </dependency>
         <!-- kafka -->
         <dependency>
@@ -257,7 +257,7 @@
         <dependency>
             <groupId>io.netty</groupId>
             <artifactId>netty-all</artifactId>
-            <version>4.1.9.Final</version>
+            <version>5.0.0.Alpha2</version>
         </dependency>
         <dependency>
             <groupId>com.google.protobuf</groupId>
