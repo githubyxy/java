@@ -14,9 +14,9 @@ import org.junit.Test;
 public class GenerateExcel3 {
 
     private String[] titles = new String[]{"客户姓名", "客户手机号"};
-    private int contentSize = 200000;
+    private int contentSize = 2001;
     private String[] contents = new String[]{"李艺", "11111"};
-    private String fileName = "/tmp/b.xlsx";
+    private String fileName = "/tmp/b1.xlsx";
 
     @Test
     public void test() throws FileNotFoundException, IOException {
