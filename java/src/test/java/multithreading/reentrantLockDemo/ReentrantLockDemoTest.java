@@ -9,8 +9,8 @@ public class ReentrantLockDemoTest {
         MyDomain1 myDomain1 = new MyDomain1();
         Mythread1_1 a = new Mythread1_1(myDomain1);
         Mythread1_2 b = new Mythread1_2(myDomain1);
-        Mythread1_1 c = new Mythread1_1(myDomain1);
-        Mythread1_1 d = new Mythread1_1(myDomain1);
+//        Mythread1_1 c = new Mythread1_1(myDomain1);
+//        Mythread1_1 d = new Mythread1_1(myDomain1);
         a.start();
         b.start();
 //		c.start();
@@ -26,9 +26,15 @@ public class ReentrantLockDemoTest {
     public void test2() throws InterruptedException {
         MyDomain2 myDomain2 = new MyDomain2();
         Mythread2_1 a = new Mythread2_1(myDomain2);
+        new Thread(new Runnable() {
+            @Override
+            public void run() {
+                myDomain2.await2();
+            }
+        }).start();
         Mythread2_2 b = new Mythread2_2(myDomain2);
         a.start();
-        Thread.sleep(1000);
+        Thread.sleep(5000);
         b.start();
 
         a.join();

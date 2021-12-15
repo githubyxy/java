@@ -10,6 +10,6 @@ public class Mythread2_2 extends Thread {
 
     @Override
     public void run() {
-        myDomain2.signalAll();
+        myDomain2.signal();
     }
 }

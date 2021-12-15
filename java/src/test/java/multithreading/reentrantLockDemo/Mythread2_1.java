@@ -11,5 +11,6 @@ public class Mythread2_1 extends Thread {
     @Override
     public void run() {
         myDomain2.await();
+//        myDomain2.await2();
     }
 }

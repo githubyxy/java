@@ -16,7 +16,6 @@ public class MyDomain1 {
                 Thread.sleep(1000);
             }
         } catch (Exception e) {
-            // TODO Auto-generated catch block
             e.printStackTrace();
         } finally {
             lock.unlock();
@@ -31,7 +30,6 @@ public class MyDomain1 {
             try {
                 Thread.sleep(1000);
             } catch (InterruptedException e) {
-                // TODO Auto-generated catch block
                 e.printStackTrace();
             }
         }

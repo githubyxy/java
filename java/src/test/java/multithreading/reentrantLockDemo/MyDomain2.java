@@ -14,14 +14,10 @@ public class MyDomain2 {
         System.out.println("进入await方法");
         try {
             lock.lock();
-            for (int i = 0; i < 10; i++) {
-                System.out.println("****");
-            }
-            System.out.println(Thread.currentThread().getName() + " conditionA await");
+            System.out.println(Thread.currentThread().getName() + " conditionA await " + System.currentTimeMillis());
             conditionA.await();
-            System.out.println(Thread.currentThread().getName() + " conditionA await out");
+            System.out.println(Thread.currentThread().getName() + " conditionA await out " + System.currentTimeMillis());
         } catch (Exception e) {
-            // TODO Auto-generated catch block
             e.printStackTrace();
         } finally {
             lock.unlock();
@@ -32,27 +28,25 @@ public class MyDomain2 {
         System.out.println("进入await2方法");
         try {
             lock.lock();
-            conditionB.await();
-            System.out.println(Thread.currentThread().getName() + " conditionB await");
-            Thread.sleep(1000);
+            System.out.println(Thread.currentThread().getName() + " conditionB await " + System.currentTimeMillis());
+            conditionA.await();
+            System.out.println(Thread.currentThread().getName() + " conditionB await out " + System.currentTimeMillis());
         } catch (Exception e) {
-            // TODO Auto-generated catch block
             e.printStackTrace();
         } finally {
             lock.unlock();
         }
     }
 
-    public void signalAll() {
-        System.out.println("进入signalAll方法");
+    public void signal() {
+        System.out.println("进入signal方法");
         try {
             lock.lock();
-            System.out.println(Thread.currentThread().getName() + " conditionA signalAll");
+            System.out.println(Thread.currentThread().getName() + " conditionA signal " + System.currentTimeMillis());
             conditionA.signalAll();
-            System.out.println(Thread.currentThread().getName() + " conditionA signalAll");
             Thread.sleep(3000);
+            System.out.println(Thread.currentThread().getName() + " conditionA signal " + System.currentTimeMillis());
         } catch (InterruptedException e) {
-            // TODO Auto-generated catch block
             e.printStackTrace();
         } finally {
             lock.unlock();
@@ -64,10 +58,9 @@ public class MyDomain2 {
         try {
             lock.lock();
             conditionB.signalAll();
-            System.out.println(Thread.currentThread().getName() + " conditionB signalAll2");
             Thread.sleep(1000);
+            System.out.println(Thread.currentThread().getName() + " conditionB signalAll2");
         } catch (InterruptedException e) {
-            // TODO Auto-generated catch block
             e.printStackTrace();
         } finally {
             lock.unlock();
