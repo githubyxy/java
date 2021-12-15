@@ -334,4 +334,16 @@ public class SynchronizedDemoTest {
     }
 
 
+    @Test
+    public void test16() throws InterruptedException {
+        MyDomain16 myDomain16 = new MyDomain16();
+
+        Mythread16 a = new Mythread16(myDomain16);
+        Mythread16 b = new Mythread16(myDomain16);
+        a.start();
+        b.start();
+        a.join();
+        b.join();
+    }
+
 }

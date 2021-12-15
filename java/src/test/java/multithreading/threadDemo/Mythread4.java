@@ -7,6 +7,9 @@ package multithreading.threadDemo;
  * @author yuxiaoyu
  */
 public class Mythread4 extends Thread {
+    static {
+        System.out.println("Mythread4静态块的打印：Thread.currentThread().getName()=" + Thread.currentThread().getName());
+    }
     public Mythread4() {
         System.out.println("Mythread4构造方法：Thread.currentThread().getName()=" + Thread.currentThread().getName());
         System.out.println("Mythread4构造方法：this.getName()=" + this.getName());

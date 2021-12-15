@@ -17,15 +17,8 @@ public class ThreadLocalDemoTest {
             MyThread1_2 b = new MyThread1_2();
             a.start();
             b.start();
-
-            for (int i = 0; i < 100; i++) {
-                if (Tools.tl.get() == null) {
-                    Tools.tl.set("Main" + (i + 1));
-                } else {
-                    System.out.println("Main get Value=" + Tools.tl.get());
-                }
-                Thread.sleep(200);
-            }
+            a.join();
+            b.join();
         } catch (Exception e) {
             e.printStackTrace();
         }

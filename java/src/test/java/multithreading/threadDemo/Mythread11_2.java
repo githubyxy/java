@@ -15,7 +15,7 @@ public class Mythread11_2 extends Thread {
             e.printStackTrace();
         }
         for (int i = 0; i < 50000; i++) {
-            if (Thread.interrupted()) {
+            if (this.interrupted()) {
                 System.out.println("interrupted检测到中断了，i=" + i);
             }
         }

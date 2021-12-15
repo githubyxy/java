@@ -40,6 +40,7 @@ public class ThreadsignalDemoTest {
         MyThread1_1 myThread1_1 = new MyThread1_1(object);
         MyThread1_2 myThread1_2 = new MyThread1_2(object);
         myThread1_1.start();
+        Thread.sleep(1000);
         myThread1_2.start();
 
         myThread1_1.join();

@@ -9,7 +9,7 @@ import kafka.utils.ZkUtils;
 
 public class TopicCreate {
 
-    private static final String ZK_CONNECT = "192.168.6.55:2181,192.168.6.56:2181,192.168.6.57:2181";
+    private static final String ZK_CONNECT = "106.13.148.83:2181";
     private static final int SESSION_TIME_OUT = 30000;
     private static final int CONNECT_OUT = 30000;
 
@@ -28,6 +28,7 @@ public class TopicCreate {
     }
 
     public static void main(String[] args) {
-        createTopic("education-info", 1, 1, new Properties());
+        createTopic("multicast_dev", 1, 1, new Properties());
+        createTopic("hermes_task_item", 1, 1, new Properties());
     }
 }

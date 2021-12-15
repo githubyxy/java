@@ -10,8 +10,8 @@ import org.apache.kafka.common.serialization.StringSerializer;
 
 public class Producer {
 
-    private static final String TOPIC = "education-info";
-    private static final String BROKER_LIST = "10.58.10.103:9192";
+    private static final String TOPIC = "yuxiaoyu_a";
+    private static final String BROKER_LIST = "127.0.0.1:9092";
     //    private static final String BROKER_LIST="10.57.17.77:9192,10.58.10.103:9192";
     private static KafkaProducer<String, String> producer = null;
 
