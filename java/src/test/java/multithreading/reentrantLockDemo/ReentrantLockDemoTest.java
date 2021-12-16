@@ -52,17 +52,17 @@ public class ReentrantLockDemoTest {
     @Test
     public void test3() throws InterruptedException {
         MyDomain3 myDomain3 = new MyDomain3();
-        Mythread3_1 readLock = new Mythread3_1(myDomain3);
-        Mythread3_1 readLock2 = new Mythread3_1(myDomain3);
+//        Mythread3_1 readLock = new Mythread3_1(myDomain3);
+//        Mythread3_1 readLock2 = new Mythread3_1(myDomain3);
         Mythread3_2 writeLock = new Mythread3_2(myDomain3);
-        Mythread3_2 writeLock2 = new Mythread3_2(myDomain3);
+//        Mythread3_2 writeLock2 = new Mythread3_2(myDomain3);
 
 //		readLock.start();
 //		readLock2.start();
         writeLock.start();
-        writeLock2.start();
+//        writeLock2.start();
 
-        Thread.sleep(3000);
+        Thread.sleep(30000);
     }
 
 

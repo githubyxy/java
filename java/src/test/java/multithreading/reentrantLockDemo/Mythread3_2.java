@@ -11,5 +11,6 @@ public class Mythread3_2 extends Thread {
     @Override
     public void run() {
         myDomain3.testWriteLock();
+        myDomain3.testReadLock();
     }
 }

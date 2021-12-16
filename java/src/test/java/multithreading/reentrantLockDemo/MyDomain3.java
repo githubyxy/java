@@ -12,7 +12,6 @@ public class MyDomain3 {
             System.out.println(System.currentTimeMillis() + " 获取读锁");
             Thread.sleep(1000);
         } catch (InterruptedException e) {
-            // TODO Auto-generated catch block
             e.printStackTrace();
         } finally {
             lock.readLock().unlock();
@@ -22,10 +21,9 @@ public class MyDomain3 {
     public void testWriteLock() {
         try {
             lock.writeLock().lock();
-            System.out.println(System.currentTimeMillis() + " 获取写锁");
+            System.out.println(System.currentTimeMillis() + " 获取写锁" + lock.writeLock().getHoldCount());
             Thread.sleep(1000);
         } catch (InterruptedException e) {
-            // TODO Auto-generated catch block
             e.printStackTrace();
         } finally {
             lock.writeLock().unlock();
